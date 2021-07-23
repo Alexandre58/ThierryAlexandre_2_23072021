@@ -1,11 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;500&display=swap');
 
 body {
     font-family: 'Raleway', sans-serif;
-    border:solid black 1px;
     margin: 0;
-    padding: 0;
-  
+    padding: 0; 
 }
 /*Header*/
 header {
@@ -13,59 +11,76 @@ header {
     margin: auto;
 }
 .header_h1 {
-    border:solid black 1px;
     display: flex;  
     justify-content: flex-end;
 }
-
-.header_img {
-    border:solid rgb(228, 19, 19) 2px;
-   flex-grow: 1.8;
-   
-    
-}
 .header_img img {
-    border:solid rgb(240, 224, 11) 1px;
-     width: 13%;
-     margin-bottom: -30px;
+     width: 6.5rem;
+     margin-top:25px;
 }
-
 .header_nav {
     display: flex;
-    align-items: flex-end;
-    flex-grow: 0.3;
-   
-    border:solid black 1px;
-    width: 30%;
+    justify-content: flex-end;
+    flex-grow:1;
     color:#0065FC;
-
-}
-.header_nav ul {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-  
-    
-    border:solid rgb(241, 13, 13) 1px;
-    width: 100%;
-    list-style-type: none;
-   
-    
-}
-.header_nav ul a  {
+    margin-right: 2%;
+} 
+a {
     text-decoration: none;
 }
-.header_nav ul a::before {
-   position: absolute;
-   content: "";
-   width: 100%;
-   height: 0;
-   border:solid 1px #0065FC;
-   top: 0;
-   left: 0;
-   transform: scaleY(2) ;
-   -webkit-transform: scaleY(2) ;
-   -moz-transform: scaleY(2) ;
-   -ms-transform: scaleY(2) ;
-   -o-transform: scaleY(2) ;
-}  
+.nav_p {
+    padding: 40px 20px;
+    
+}
+.effetHover {
+    visibility: visible;
+    width: 90%;
+    height: 2px;
+    border: solid black 1px;
+    background-color: #0065FC;
+}
+.effetHover :hover {
+    visibility: visible;
+}
+/*Header Texte dans tete*/
+.trouverHebergement {
+    font-weight: 900;
+    margin-bottom: 3rem;
+}
+.trouverHebergement_Recherche {
+    display:flex;
+    flex-wrap: no-wrap;
+    width: 100%;  
+}
+.trouverHebergement_font-awesome {
+    background-color: #DEEBFF;
+   padding: 0.8rem 1.5rem;
+    border-radius: 15px 0 0 15px;
+    -webkit-border-radius: 15px 0 0 15px;
+    -moz-border-radius: 15px 0 0 15px;
+    -ms-border-radius: 15px 0 0 15px;
+    -o-border-radius: 15px 0 0 15px;
+    font-size: 1.5rem;
+}
+.rechercher, .envoyer {   
+    border:none;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;  
+}
+.envoyer {
+    border-radius:0 15px 15px 0;
+    -webkit-border-radius:0 15px 15px 0;
+    -moz-border-radius:0 15px 15px 0;
+    -ms-border-radius:0 15px 15px 0;
+    -o-border-radius:0 15px 15px 0;
+    margin: 0;
+    padding: 1.1rem;
+    background-color: #0065FC;
+    color:white;
+    width: 9rem;
+}
+
+
+
+
