@@ -158,7 +158,6 @@ main {
    flex-direction: column;
     width: 92%;
     margin: auto;
-    border: solid rgb(208, 243, 13) 1px;
     height:1250px;  
 }
 .container_h2_divSixArticles,.div_h2_troisArticles {
@@ -169,28 +168,65 @@ main {
    -ms-border-radius: 20px;
    -o-border-radius: 20px;
 }
+
 .main_hebergement_populaire {
     display: flex;
-     border: solid rgb(247, 9, 9) 1px; 
 }
 .container_h2_divSixArticles {
     display: flex;
     flex-direction: column;
     flex-grow: 2;
- 
     height: 624px;
  
 }
 .container_h2_divSixArticles p a {
-    color: black;
     margin-left: 30px;
 }
 .hebergements_deuxFoisTrois {
     display: flex;
-   justify-content: space-around;
-   margin-top: 30px;
-    border: solid black 1px;
+    justify-content: space-around;
+    margin-top: 30px;
+    
    
+}
+.hebergements_deuxFoisTrois article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    padding: 3px;
+}
+.hebergements_deuxFoisTrois article img,.hebergements_deuxFoisTrois article{
+    border-radius: 20px 20px 0 0;
+    -webkit-border-radius: 20px 20px 0 0;
+    -moz-border-radius: 20px 20px 0 0;
+    -ms-border-radius: 20px 20px 0 0;
+    -o-border-radius: 20px 20px 0 0;
+}
+.hebergements_deuxFoisTrois article img{
+    object-fit: cover;
+    margin-top: 5px;
+    width: 240px;
+    height: 114px;
+    margin-bottom: -15px;
+}
+
+.hebergements_deuxFoisTrois article div p {
+    font-weight: normal;
+    font-size: 0.9rem;
+    margin-top: -20px;
+
+}
+.etoile {
+    display: flex;
+    padding: 8px;
+    color:#0065FC;
+}
+.hebergements_deuxFoisTrois article div p:nth-child(5){
+    opacity: 0.3;
+}
+.div_hebergement_sixArticles {
+    margin-left: 2rem;
 }
 
 /********les plus populaires***/
@@ -200,10 +236,10 @@ main {
 }
 
 .hebergements_deuxFoisTrois article {
-    border: solid black 1px;
     width: 240px;
     height: 200px;
 }
+
 
 /********div les plus populaires***********/
 .div_h2_troisArticles {
@@ -215,7 +251,6 @@ main {
 .div_hebergement_troisArticles {
     display: flex;
     justify-content: space-between;
-    border: solid black 1px;  
 }
 .div_hebergement_trois {
     width: 336px;
@@ -241,7 +276,6 @@ main {
 }
 .containerDeuxDivDeTroisArticles {
     display: flex;
-    border: solid rgb(19, 16, 16) 1px;
     margin: 5px;
 
 }
@@ -251,6 +285,7 @@ main {
     border: solid rgb(207, 243, 3) 1px;
 
 }
+
 .articleVerticale {
     border: solid rgb(80, 12, 238) 1px;
     width: 300px;
