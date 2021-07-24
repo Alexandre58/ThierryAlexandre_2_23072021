@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;500&display=swap');
-
+*{
+    font-weight: 900;
+}
 body {
     font-family: 'Raleway', sans-serif;
     margin: 0;
     padding: 0; 
+  
 }
 /*Header*/
 header {
@@ -42,19 +45,33 @@ a {
 .effetHover :hover {
     visibility: visible;
 }
+@media screen and (max-width: 400px) {
+    .header_h1 {
+         flex-wrap: wrap;
+         border:solid black 1px
+    }
+    .header_img {
+        border:solid black 1px
+        
+    }
+    .flexMobil {
+        display: flex;
+        flex-grow: 1;
+    }
+ 
+}
 /*Header Texte dans tete*/
 .trouverHebergement {
-    font-weight: 900;
     margin-bottom: 3rem;
 }
 .trouverHebergement_Recherche {
     display:flex;
     flex-wrap: no-wrap;
-    width: 100%;  
+    width:100%; 
 }
 .trouverHebergement_font-awesome {
     background-color: #DEEBFF;
-   padding: 0.8rem 1.5rem;
+    padding: 0.8rem 1.5rem;
     border-radius: 15px 0 0 15px;
     -webkit-border-radius: 15px 0 0 15px;
     -moz-border-radius: 15px 0 0 15px;
@@ -62,12 +79,16 @@ a {
     -o-border-radius: 15px 0 0 15px;
     font-size: 1.5rem;
 }
-.rechercher, .envoyer {   
-    border:none;
-    font-size: 1rem;
-    font-weight: 700;
+.rechercher {
+    background-color: #F2F2F2;
     text-align: center;  
+    font-size: 1rem;
+    padding: 17px; 
+    border:none;
+    border:solid 1px #DEEBFF;   
 }
+
+
 .envoyer {
     border-radius:0 15px 15px 0;
     -webkit-border-radius:0 15px 15px 0;
@@ -75,10 +96,63 @@ a {
     -ms-border-radius:0 15px 15px 0;
     -o-border-radius:0 15px 15px 0;
     margin: 0;
-    padding: 1.1rem;
+    padding: 1rem;
     background-color: #0065FC;
     color:white;
     width: 9rem;
+    font-size: 1rem;
+    text-align: center;  
+}
+/*Filtres */
+.filtresContainer_container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    margin: 31px;
+}
+.filtresContainer {
+    display: flex;
+   
+}
+.filtresContainerH2 {
+   flex-grow: 1;
+   margin-right: 3rem;
+}
+.filtresContainerFlitres {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    
+}
+.filtresContainer_div {
+   display: flex;
+   
+    align-items: center;
+    margin: 0 1rem 0 0;
+    padding-right: 1rem;
+    height: 3.5rem;
+    border: 1px solid #DEEBFF;
+    border-radius:50px ;
+    -webkit-border-radius:50px ;
+    -moz-border-radius:50px ;
+    -ms-border-radius:50px ;
+    -o-border-radius:50px ;
+}
+.fas2 {
+   padding-top: 1.2rem;
+   margin: 0 1rem 0 0;
+    color:#0065Fc;
+    background-color:#DEEBFF ;
+    width: 3.5rem;
+    height: 2.2rem;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    text-align: center;
+    
+    
 }
 
 
