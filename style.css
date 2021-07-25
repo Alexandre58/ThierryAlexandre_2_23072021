@@ -5,8 +5,13 @@
 body {
     font-family: 'Raleway', sans-serif;
     margin: 0;
-    padding: 0; 
+    padding: 0;
+    width: 100%; 
   
+}
+/*color*/
+.container_h2_divSixArticles,.div_h2_troisArticles,.hebergements_deuxFoisTrois article,.div_hebergement_trois,footer,.rechercher {
+    background-color: #F2F2F2;
 }
 /*Header*/
 header {
@@ -80,7 +85,6 @@ a {
     font-size: 1.5rem;
 }
 .rechercher {
-    background-color: #F2F2F2;
     text-align: center;  
     font-size: 1rem;
     padding: 17px; 
@@ -160,8 +164,9 @@ main {
     margin: auto;
     height:1250px;  
 }
-.container_h2_divSixArticles,.div_h2_troisArticles {
-    background-color: #F2F2F2;
+/************hebergement Marseille****************/
+
+.container_h2_divSixArticles,.div_h2_troisArticles,.hebergements_deuxFoisTrois article,.div_hebergement_trois,.articleVerticale,.divHorizontale,.deuxAticlesHorizontales  {
     border-radius: 20px;
     -webkit-border-radius: 20px;
    -moz-border-radius: 20px;
@@ -172,10 +177,11 @@ main {
 .main_hebergement_populaire {
     display: flex;
 }
+/*dimension du bloc hebergement Marseille**********/
 .container_h2_divSixArticles {
     display: flex;
     flex-direction: column;
-    flex-grow: 2;
+    flex-grow:1;
     height: 624px;
  
 }
@@ -187,16 +193,16 @@ main {
     justify-content: space-around;
     margin-top: 30px;
     
-   
+
 }
 .hebergements_deuxFoisTrois article {
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: white;
-    padding: 3px;
+    padding: 0.2rem;
 }
-.hebergements_deuxFoisTrois article img,.hebergements_deuxFoisTrois article{
+.hebergements_deuxFoisTrois article img,.articleVerticale article img,.divHorizontale article img {
     border-radius: 20px 20px 0 0;
     -webkit-border-radius: 20px 20px 0 0;
     -moz-border-radius: 20px 20px 0 0;
@@ -204,14 +210,14 @@ main {
     -o-border-radius: 20px 20px 0 0;
 }
 .hebergements_deuxFoisTrois article img{
-    object-fit: cover;
+   object-fit: cover;
     margin-top: 5px;
-    width: 240px;
+    width: 100%;
     height: 114px;
     margin-bottom: -15px;
 }
 
-.hebergements_deuxFoisTrois article div p {
+.hebergements_deuxFoisTrois article div p,.div_hebergement_trois article p {
     font-weight: normal;
     font-size: 0.9rem;
     margin-top: -20px;
@@ -219,7 +225,7 @@ main {
 }
 .etoile {
     display: flex;
-    padding: 8px;
+    padding: 0.5rem;
     color:#0065FC;
 }
 .hebergements_deuxFoisTrois article div p:nth-child(5){
@@ -233,32 +239,51 @@ main {
 .div_h2_troisArticles {
     display: flex;
     flex-direction: column;
+    
 }
-
+.div_hebergement_trois article img{
+    object-fit: cover;
+    margin:3px 13px 3px 3px;
+    width: 9rem;
+    height: 135px;
+    border-radius: 20px 0 0 20px;
+    -webkit-border-radius: 20px 0 0 20px;
+    -moz-border-radius: 20px 0 0 20px;
+    -ms-border-radius: 20px 0 0 20px;
+    -o-border-radius: 20px 0 0 20px;
+}
 .hebergements_deuxFoisTrois article {
-    width: 240px;
+    width: 100%;
     height: 200px;
+    margin: 0 1.5rem 0 1.5rem;
+    align-content: space-around;
+
 }
-
-
-/********div les plus populaires***********/
 .div_h2_troisArticles {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin-left: 3rem;
+    padding: 0 2rem 0 2rem;
+    
 }
 .div_hebergement_troisArticles {
     display: flex;
     justify-content: space-between;
-}
-.div_hebergement_trois {
-    width: 336px;
-    height: 142px;
-    
-    border: solid black 1px;  
    
 }
+.div_hebergement_trois {
+    width: 100%;
+    height: 142px;
+    background-color: white;
+}
+.div_hebergement_trois article{
+    display: flex;  
+}
+.div_hebergement_trois article .etoile {
+    margin-top: 4rem;
+}
+
 
 
 /*************activite a marseille*******/
@@ -276,26 +301,51 @@ main {
 }
 .containerDeuxDivDeTroisArticles {
     display: flex;
-    margin: 5px;
+   
 
 }
 .divHorizontale {
     display: flex;
     flex-direction: column;
-    border: solid rgb(207, 243, 3) 1px;
+    margin-right: 1rem;
+   
 
 }
+/****reglage image********/
+.articleVerticale article img{
+    object-fit: cover;
+    width: 18rem;
+    height: 390px;
+}
+.divHorizontale article img {
+    object-fit: cover;
+    width: 17rem;
+    height: 150px;
 
+}
 .articleVerticale {
-    border: solid rgb(80, 12, 238) 1px;
-    width: 300px;
+    width: 18rem;
     height: 440px;
+    font-size: 1.2rem;
 
 }
 .deuxAticlesHorizontales {
-    border: solid rgb(208, 230, 16) 1px;
-    width: 300px;
-    height: 220px;
+    margin:0 1rem 2rem;
+    width: 17rem;
+    height: 204px;
+}
+/**ombre activité Marseille****/
+.articleVerticale,.deuxAticlesHorizontales  {
+    margin-right: 1rem;
+box-shadow: 1px 0px 57px -29px rgba(0,0,0,0.65);
+-webkit-box-shadow: 1px 0px 57px -29px rgba(0,0,0,0.65);
+-moz-box-shadow: 1px 0px 57px -29px rgba(0,0,0,0.65);
+}
+h5 {
+    font-size: 1rem;
+    padding-left: 1.5rem;
+    
+
 }
 
 /*footer*/
@@ -306,7 +356,6 @@ footer {
    width: 100%;
    height: 220px;
    margin-top: 60px;
-   background-color: #F2F2F2;
 
 }
 footer p {
