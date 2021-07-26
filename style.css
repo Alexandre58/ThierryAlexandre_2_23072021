@@ -2,6 +2,10 @@
 *{
     font-weight: 900;
 }
+/*color site*/
+.container_SixArticles,.div_troisArticles,.hebergements_deuxFoisTrois article,.div_hebergement_trois,footer,.rechercher {
+    background-color: #F2F2F2;
+}
 body {
     font-family: 'Raleway', sans-serif;
     margin: 0;
@@ -9,40 +13,38 @@ body {
     width: 100%; 
   
 }
-/*color*/
-.container_SixArticles,.div_troisArticles,.hebergements_deuxFoisTrois article,.div_hebergement_trois,footer,.rechercher {
-    background-color: #F2F2F2;
-}
-/*Header*/
 header {
     width: 92%;
     margin: auto;
 }
+/*****container header premiere partie****/
 .header_h1 {
-    display: flex;  
-    justify-content: flex-end;
+    display: flex;
+    justify-content: space-between;
 }
+/*dimension logo*/
 .header_img img {
-     width: 6.5rem;
-     margin-top:25px;
+    width: 6.5rem;
+    margin-top:25px;
 }
+/*******header nav******/
 .header_nav {
     display: flex;
-    justify-content: flex-end;
-    flex-grow:1;
+   
     color:#0065FC;
-    margin-right: 2%;
-} 
-a {
-    text-decoration: none;
+    margin-left: 600px;
 }
-.nav_p {
-    padding: 40px 20px;
-    
-}
+/*effet sur lien en tete*/
 .effetHover {
     visibility: visible;
-    width: 90%;
+    width: 80%;
+    height: 2px;
+    border: solid black 1px;
+    background-color: #0065FC;
+}
+.effetHoverInscription{
+    visibility: visible;
+    width: 100px;
     height: 2px;
     border: solid black 1px;
     background-color: #0065FC;
@@ -50,44 +52,37 @@ a {
 .effetHover :hover {
     visibility: visible;
 }
-@media screen and (max-width: 400px) {
-    .header_h1 {
-         flex-wrap: wrap;
-         border:solid black 1px
-    }
-    .header_img {
-        border:solid black 1px
-        
-    }
-    .flexMobil {
-        display: flex;
-        flex-grow: 1;
-    }
- 
+a {
+    text-decoration: none;
 }
-/*Header Texte dans tete*/
+.nav_pActivite {
+    padding: 40px 20px; 
+    margin-right: 20px;  
+}
+.nav_pActivite a {
+    margin-left: 20px;
+}
+.nav_pHebergement {
+    padding: 40px 20px;  
+}
+.nav_pInscription {
+    padding: 40px 20px; 
+    width: 50px;
+}
+/*FIN effet sur lien en tete*/
+/*******container deuxieme partie header*********/
+/*container h2 +p*/
 .trouverHebergement {
     margin-bottom: 3rem;
 }
+/*container element de recherche*/
 .trouverHebergement_Recherche {
-    display:flex;
-    flex-wrap: no-wrap;
-    width:100%; 
-}
-.trouverHebergement_font-awesome {
-    background-color: #DEEBFF;
-    padding: 0.8rem 1.5rem;
-    border-radius: 15px 0 0 15px;
-    -webkit-border-radius: 15px 0 0 15px;
-    -moz-border-radius: 15px 0 0 15px;
-    -ms-border-radius: 15px 0 0 15px;
-    -o-border-radius: 15px 0 0 15px;
-    font-size: 1.5rem;
+    display: flex;
 }
 .rechercher {
     text-align: center;  
     font-size: 1rem;
-    padding: 17px; 
+    padding: 15px; 
     border:none;
     border:solid 1px #DEEBFF;   
 }
@@ -99,37 +94,46 @@ a {
     -moz-border-radius:0 15px 15px 0;
     -ms-border-radius:0 15px 15px 0;
     -o-border-radius:0 15px 15px 0;
-    margin: 0;
-    padding: 1rem;
+    margin: -5px;
+    padding: 15px;  
     background-color: #0065FC;
     color:white;
     width: 9rem;
     font-size: 1rem;
     text-align: center;  
 }
-/*Filtres */
+
+
+/***********partie recherche*************/
+.trouverHebergement_font-awesome {
+    background-color: #DEEBFF;
+    padding: 0.8rem 1.5rem;
+    border-radius: 15px 0 0 15px;
+    -webkit-border-radius: 15px 0 0 15px;
+    -moz-border-radius: 15px 0 0 15px;
+    -ms-border-radius: 15px 0 0 15px;
+    -o-border-radius: 15px 0 0 15px;
+    font-size: 1.5rem;
+}
+/********container filtres********/
 .filtresContainer_container {
     display: flex;
-    flex-direction: column;
-    flex-grow: 2;
+    flex-direction: column; 
+    flex-wrap: wrap;
     margin: 31px;
-}
-.filtresContainer {
-    display: flex;
-    flex-grow: 2;
-   
-}
-.filtresContainerH2 {
-   flex-grow: 1;
-   
+    border: solid 1px black;
 }
 .filtresContainerFlitres {
-    width: 90%;
     display: flex;
-   
-    
-    
+    width: 90%;
 }
+/*********container eco familial romantiqueanim*****/
+.filtresContainer {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+/*********container logo eco fam rom anim*****/
 .filtresContainer_div {
     display: flex;
     align-items: center;
@@ -143,6 +147,7 @@ a {
     -ms-border-radius:50px ;
     -o-border-radius:50px ;
 }
+/*Filtres */
 .fas2 {
    padding-top: 1.2rem;
    margin: 0 1rem 0 0;
@@ -157,6 +162,31 @@ a {
     -o-border-radius: 50px;
     text-align: center;   
 }
+/****container plus de 50 logements****/
+.filtresContainersIcone {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    flex-wrap: wrap;
+}
+.fas500logements {
+    border: 1px solid #0065Fc;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    text-align: center;   
+    font-size: 0.7rem;
+    width: 21px;
+    height: 17px;
+    padding-top: 4px;
+
+}
+
+
+   
+
 /***main container ***/
 /*ci-dessous border radius des elements*/
 .container_SixArticles,.div_troisArticles,.hebergements_deuxFoisTrois article,.div_hebergement_trois,.articleVerticale,.divHorizontale,.deuxArticlesHorizontales  {
@@ -165,7 +195,63 @@ a {
    -moz-border-radius: 20px;
    -ms-border-radius: 20px;
    -o-border-radius: 20px;
+}/*********************************reglages associés***********************/
+/*border radius des images*/
+.hebergements_deuxFoisTrois article img,.articleVerticale article img,.divHorizontale article img {
+    border-radius: 20px 20px 0 0;
+    -webkit-border-radius: 20px 20px 0 0;
+    -moz-border-radius: 20px 20px 0 0;
+    -ms-border-radius: 20px 20px 0 0;
+    -o-border-radius: 20px 20px 0 0;
 }
+/*reglage de quelques <p>*/
+.hebergements_deuxFoisTrois article div p,.div_hebergement_trois article p {
+    font-weight: normal;
+    color:black;
+    font-size: 0.8rem;
+    margin: 0 0 0px 5px;
+}
+
+/*reglage des star*/
+.etoile {
+    display: flex;
+    padding: 0.5rem;
+    color: #0065fc ;
+}
+/*********************************reglages associés***********************/
+/*border radius des images*/
+.hebergements_deuxFoisTrois article img,.articleVerticale article img,.divHorizontale article img {
+    border-radius: 20px 20px 0 0;
+    -webkit-border-radius: 20px 20px 0 0;
+    -moz-border-radius: 20px 20px 0 0;
+    -ms-border-radius: 20px 20px 0 0;
+    -o-border-radius: 20px 20px 0 0;
+}
+/*reglage de quelques <p>*/
+.hebergements_deuxFoisTrois article div p,.div_hebergement_trois article p {
+    font-weight: normal;
+    color:black;
+    font-size: 0.8rem;
+    margin: 0 0 0px 5px;
+}
+
+/*reglage des star*/
+.etoile {
+    display: flex;
+    
+    color: #0065fc ;
+}
+.fas {
+    color: #0065fc ;
+}
+#starWhite{
+    opacity: 0.3;
+}
+
+#starWhite{
+    opacity: 0.3;
+}
+
 /*****************main container**********/
 main {
     display: flex;
@@ -188,7 +274,6 @@ main {
     display: flex;
     flex-direction: column;
     width: 90%;
-    border:solid black 1px; 
     height: 624px;
     padding: 15px;
 }
@@ -252,7 +337,6 @@ main {
     padding: 0 2rem 0 2rem;
   /*  width: 28%;*/
     margin-right: 1%;
-    border: solid 2px red;;
     flex-grow: 1;  
 }
 /********Container h2 et p **************/
@@ -380,37 +464,8 @@ footer p:hover {
     font-weight:700;
 
 }
-/*********************************reglages associés***********************/
-/*border radius des images*/
-.hebergements_deuxFoisTrois article img,.articleVerticale article img,.divHorizontale article img {
-    border-radius: 20px 20px 0 0;
-    -webkit-border-radius: 20px 20px 0 0;
-    -moz-border-radius: 20px 20px 0 0;
-    -ms-border-radius: 20px 20px 0 0;
-    -o-border-radius: 20px 20px 0 0;
-}
 
 
-/*reglage de quelques <p>*/
-.hebergements_deuxFoisTrois article div p,.div_hebergement_trois article p {
-    font-weight: normal;
-    color:black;
-    font-size: 0.8rem;
-    margin: 0 0 0px 5px;
-}
-
-/*reglage des star*/
-.etoile {
-    display: flex;
-    padding: 0.5rem;
-    color: #0065fc ;
-}
-.fas {
-    color: #0065fc ;
-}
-#starWhite{
-    opacity: 0.3;
-}
 
 
 

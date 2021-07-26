@@ -10,42 +10,47 @@
 </head>
 <body>
     <header>
+          <!--/*****container header premiere partie****/-->
           <div class="header_h1">
                 <div class ="header_img">
                       <h1>
                         <img  src="./src/images/logos/Reservia@3x.png" alt="Logo-reservia">
                       </h1>
-                </div>         
+                </div> 
+          <!--/****header nav*****/-->        
                 <nav class="header_nav">
-                        <div>    
-                            <div class="effetHover"></div>
-                            <p class="nav_p"><a href="#">Activité</a></p>
-                        </div>
-                        <div>
-                            <div class="effetHover"> </div> 
-                            <p class="nav_p"><a href="#">Hébergements</a></p>
-                      </div>
-                       <div class="flexMobil">
-                            <div class="effetHover"> </div> 
-                            <p class="nav_p"><a href="#">S'inscrire</a></p>
-                       </div>                    
+                            
+                        <div class="effetHover">
+                        <p class="nav_pHebergement"><a href="#">Hébergements</a></p>
+                        </div> 
+                  
+                        <div class="effetHover">
+                        <p class="nav_pActivite "><a href="#">Activité</a></p>
+                        </div>      
                  </nav>
-          </div>     
-           <div class="trouverHebergement">
-                <h2>
-                  Trouvez votre hébergement pour des vacances de rêve.
-                </h2>
-                    <p>En plein centre ville ou en pleine nature</p>
-           </div>       
-           <div class="trouverHebergement_Recherche">
-                        <div class="trouverHebergement_font-awesome">
-                              <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <form class="trouverUnHebergement_form"> 
-                              <input type="text" name=text" class="rechercher" placeholder="Marseille, France">
-                              <input type="submit" name="submit" class="envoyer" value="Rechercher">
-                        </form>        
-            </div>
+                
+                  <div class="effetHoverInscription">             
+                  <p class="nav_pInscription"><a href="#">S'inscrire</a></p>
+                  </div>   
+          </div> 
+          <div class="deuxiemePartieHeader">
+                  <div class="trouverHebergement">
+                        <h2>
+                              Trouvez votre hébergement pour des vacances de rêve.
+                        </h2>
+                              <p>En plein centre ville ou en pleine nature</p>
+                  </div>       
+                  <div class="trouverHebergement_Recherche">
+                                    <a href="#recherche-populaire">
+                                    <div class="trouverHebergement_font-awesome">
+                                          <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    </a>
+                                    <form class="trouverUnHebergement_form"> 
+                                          <input type="text" name=text" class="rechercher" placeholder="Marseille, France">
+                                          <input type="submit" name="submit" class="envoyer" value="Rechercher">
+                                    </form>        
+                  </div>
             <div class="filtresContainer_container">
                   <div class="filtresContainerFlitres">
                         <h2 class="filtresContainerH2">
@@ -71,9 +76,11 @@
                         </div>
                   </div>
                   <div class="filtresContainersIcone">
-                       <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                        <p><i class="fas fa-info fas500logements"></i></p>
+                        <p>Plus de 500 logements sont disponibles dans cette ville</p>
                   </div>
-           </div>       
+             </div> 
+         </div>     
   </header>
   <!--main container-->
   <main>
@@ -200,7 +207,7 @@
                         <p class="pHoverSixAticle " id="pHebergements_deuxFoisTrois"><a href="#">Afficher plus</a></p>
             </div>
             <!--Les plus populaires-->
-              <div class="div_troisArticles">
+              <div class="div_troisArticles" id="recherche-populaire">
                         <div class="div_hebergement_troisArticles">
                               <h3>Les plus populaires</h3>
                               <p><i class="fas fa-chart-line"></i></p>
@@ -229,7 +236,7 @@
                               <article>
                                     <a href="">
                                     <div>
-                                        <img src="src\images\hebergement\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="photos-de-la-chambre">
+                                        <img src="src\images\hebergement\aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambres d'hôtes">
                                     </div>
                                     <div>
                                           <h3>Au coeur de l'eau Chambres d'hôtes</h3>
@@ -249,7 +256,7 @@
                               <article>
                                     <a href="#">
                                     <div>
-                                        <img src="src\images\hebergement\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="photos-de-la-chambre">
+                                        <img src="src\images\hebergement\febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hotel tout bleu et blanc">
                                     </div>
                                     <div>
                                           <h3>Hotel tout bleu et blanc</h3>
