@@ -25,7 +25,9 @@ header {
 /*dimension logo*/
 .header_img img {
     width: 6.5rem;
-    margin-top:25px;
+    margin-top:20px;
+    margin-right: 200px;
+
 }
 /*******header nav******/
 .header_nav {
@@ -35,40 +37,21 @@ header {
     margin-left: 600px;
 }
 /*effet sur lien en tete*/
-.effetHover {
-    visibility: visible;
-    width: 80%;
-    height: 2px;
-    border: solid black 1px;
-    background-color: #0065FC;
-}
-.effetHoverInscription{
-    visibility: visible;
-    width: 100px;
-    height: 2px;
-    border: solid black 1px;
-    background-color: #0065FC;
-}
-.effetHover :hover {
-    visibility: visible;
-}
 a {
     text-decoration: none;
 }
-.nav_pActivite {
-    padding: 40px 20px; 
-    margin-right: 20px;  
+#nav_pHebergement {
+    width: 100%;
+    height: 80px;
+   margin-left: 30px;
 }
-.nav_pActivite a {
-    margin-left: 20px;
+#nav_pHebergement:hover {
+    border-top:3px solid #0065FC;
 }
-.nav_pHebergement {
-    padding: 40px 20px;  
+#nav_pHebergement p {
+    margin-top:40px
 }
-.nav_pInscription {
-    padding: 40px 20px; 
-    width: 50px;
-}
+
 /*FIN effet sur lien en tete*/
 /*******container deuxieme partie header*********/
 /*container h2 +p*/
