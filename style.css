@@ -93,7 +93,7 @@ a {
 /***********partie recherche*************/
 .trouverHebergement_font-awesome {
     background-color: #DEEBFF;
-    padding: 0.8rem 5vw;
+    padding: 0.8rem 1.1rem;
     border-radius: 15px 0 0 15px;
     -webkit-border-radius: 15px 0 0 15px;
     -moz-border-radius: 15px 0 0 15px;
@@ -484,7 +484,7 @@ footer p:hover {
           border:none;
       }
 }
-@media screen and (min-width:500px) {
+@media screen and (min-width:550px) {
     button {
         display: none;
     }
