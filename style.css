@@ -32,7 +32,7 @@ header {
     display: flex; 
     justify-content: flex-end;
     flex-grow: 1;
-    color:#646668;
+    color:#0065FC;
    /* margin-left: 600px;*/
     column-gap: 30px;
 }
@@ -40,19 +40,19 @@ header {
 a {
     text-decoration: none;
 }
-#nav_pHebergement:hover {
+.nav_pHebergement:hover {
     border-top:3px solid #0065FC;
 }
-#nav_pHebergement p {
+.nav_pHebergement p {
     margin-top:40px
 }
-#nav_pHebergementInscrire {
+.nav_pHebergementInscrire {
     margin-left: 30px;  
 }
-#nav_pHebergementInscrire:hover {
+.nav_pHebergementInscrire:hover {
     border-top:3px solid #0065FC;
 }
-#nav_pHebergementInscrire p {
+.nav_pHebergementInscrire p {
     margin-top:40px
 }
 
@@ -65,41 +65,54 @@ a {
 /*container element de recherche*/
 .trouverHebergement_Recherche {
     display: flex;
+    border-radius: 20px;
+    height: 53px;
+    border:solid 1px #DEEBFF;
+   width: 55vh;
 }
-.rechercher {
+.trouverUnHebergement_form {
+    display: flex;
+    flex-wrap: nowrap;  
+}
+.rechercher{
     text-align: center;  
     font-size: 1rem;
-    padding: 15px 15px 14px 14px; 
-    border:none;
-    border:solid 1px #DEEBFF;   
+    border:none; 
+    height: 50px;
+    background-color: white;
+    }
+
+
+input:focus {
+    background-color:rgb(223, 205, 205) ;
+    outline: none;
+}
+.rechercher::placeholder {
+    color: black;
 }
 .envoyer {
     border-radius:0 15px 15px 0;
-    -webkit-border-radius:0 15px 15px 0;
-    -moz-border-radius:0 15px 15px 0;
-    -ms-border-radius:0 15px 15px 0;
-    -o-border-radius:0 15px 15px 0;
-    margin: -5px;
-    padding: 15px;  
-    background-color: #0065FC;
+     background-color: #0065FC;
     color:white;
     width: 9rem;
     font-size: 1rem;
     text-align: center;  
 }
-.envoyerMobile {
-    display: none;  
+.envoyer:hover {
+    background-color: #13315e;
+    width: 11rem;  
 }
+
 /***********partie recherche*************/
 .trouverHebergement_font-awesome {
     background-color: #DEEBFF;
-    padding: 0.8rem 1.1rem;
+    padding: 0.8rem 1.2rem ;
+    margin-top: -1px;
     border-radius: 15px 0 0 15px;
-    -webkit-border-radius: 15px 0 0 15px;
-    -moz-border-radius: 15px 0 0 15px;
-    -ms-border-radius: 15px 0 0 15px;
-    -o-border-radius: 15px 0 0 15px;
     font-size: 1.5rem;
+}
+.trouverHebergement_font-awesome:hover {
+    background-color:#aebfda ;
 }
 /********container filtres********/
 .filtresContainer_container {
@@ -127,15 +140,9 @@ a {
     height: 3.3rem;
     border: 1px solid #DEEBFF;
     border-radius:50px ;
-    -webkit-border-radius:50px ;
-    -moz-border-radius:50px ;
-    -ms-border-radius:50px ;
-    -o-border-radius:50px ;
 }
 .filtresContainer_div:hover {
     box-shadow: 2px -7px 28px 7px rgba(182, 171, 171, 0.91) inset;
-    -webkit-box-shadow: 2px -7px 28px 7px rgba(182, 171, 171, 0.91) inset;
-    -moz-box-shadow: 2px -7px 28px 7px rgba(182, 171, 171, 0.91) inset;
 }
 /*Filtres */
 .fas2 {
@@ -146,10 +153,6 @@ a {
     width: 3.5rem;
     height: 2.2rem;
     border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
     text-align: center;   
 }
 .filtresContainer_div p:hover {
@@ -169,10 +172,6 @@ a {
 .fas500logements {
     border: 1px solid #0065Fc;
     border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
     text-align: center;   
     font-size: 0.7rem;
     width: 21px;
@@ -192,18 +191,10 @@ main {
 /*ci-dessous border radius des elements*/
 .container_SixArticles,.div_troisArticles,.hebergements_deuxFoisTrois article,.div_hebergement_trois,.articleVerticale,.divHorizontale,.deuxArticlesHorizontales  {
     border-radius: 20px;
-    -webkit-border-radius: 20px;
-   -moz-border-radius: 20px;
-   -ms-border-radius: 20px;
-   -o-border-radius: 20px;
 }/*********************************reglages associés***********************/
 /*border radius des images*/
 .hebergements_deuxFoisTrois article img,.articleVerticale article img,.divHorizontale article img {
     border-radius: 20px 20px 0 0;
-    -webkit-border-radius: 20px 20px 0 0;
-    -moz-border-radius: 20px 20px 0 0;
-    -ms-border-radius: 20px 20px 0 0;
-    -o-border-radius: 20px 20px 0 0;
 }
 /*********************************reglages associés***********************/
 
@@ -280,7 +271,7 @@ main {
   color:black;
 }
 #pHebergements_deuxFoisTrois {
-    margin: 60px 0 0 20px;
+    margin: 60px 0 20px 20px;
 }
 .pHoverSixAticle :hover {
     font-size: 1.1rem; 
@@ -300,6 +291,12 @@ main {
     justify-content: space-between;
 }
 /*********Container articles les plus populaires******/
+.containerText {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20%;
+     height: auto;   
+}
 .div_hebergement_trois  {
     height: auto;
     background-color: white;
@@ -314,10 +311,6 @@ main {
     width: 9rem;
     height: 135px;
     border-radius: 20px 0 0 20px;
-    -webkit-border-radius: 20px 0 0 20px;
-    -moz-border-radius: 20px 0 0 20px;
-    -ms-border-radius: 20px 0 0 20px;
-    -o-border-radius: 20px 0 0 20px;
 }
 .etoilePopulaire {
     display: flex;   
@@ -333,7 +326,8 @@ main {
 /*************activite a marseille*******/
 /********************Container activité Marseille***************/
 .main_activite {
-    display: flex; 
+    display: flex;
+    column-gap: 2rem; 
     margin-top: 3rem;
 }
 /****************container de deux blocs activité Marseille*********/
@@ -347,7 +341,7 @@ main {
 }
 .divVerticale {
    margin-right: 5%;
-   width: 42%;
+   width: 100%;
 }
 /*******divs verticale et cliquable************/
 .articleVerticale {
@@ -376,7 +370,7 @@ h4 {
 .divHorizontale {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
 }
 /*****************bloc par articles************/
 .fortDePomegue {
@@ -405,8 +399,6 @@ h4 {
 .articleVerticale,.deuxArticlesHorizontales  {
   /*  margin-right: 1rem;*/
 box-shadow: 1px 0px 57px -29px rgba(0,0,0,0.65);
--webkit-box-shadow: 1px 0px 57px -29px rgba(0,0,0,0.65);
--moz-box-shadow: 1px 0px 57px -29px rgba(0,0,0,0.65);
 }
 /*footer*/
 footer {
@@ -433,20 +425,22 @@ footer p:hover {
     font-weight:700;
 }
 /************************media query********************/
-@media screen and (max-width:500px){  
+@media screen and (max-width:600px){  
     .header_h1 {
         display:grid;
         grid-template-columns: repeat(6,1fr);
         grid-template-rows: 2fr;  
+        width: 90%;
     }
-    #nav_pHebergementInscrire {
+    .nav_pHebergementInscrire {
         grid-column: 5/7;
         grid-row: 1;
   }
     .header_nav {
         grid-column: 1/6;
         grid-row:2;
-        column-gap: 40%;
+        column-gap: 35%;
+        margin-left: 30%;
     }  
     .div_hebergement_trois {
         flex-wrap: wrap;
@@ -455,40 +449,48 @@ footer p:hover {
         flex-wrap: wrap;
         height: auto;    
     }
-    #nav_pHebergement:hover {
+    .nav_pHebergement:hover {
         border-bottom:3px solid #0065FC;
         border-top: none;
     }
-    #nav_pHebergementInscrire:hover {
+    .nav_pHebergementInscrire:hover {
         border-top:none;
+    }
+    .trouverHebergement_Recherche {
+        width: 40vh;
     }
     .envoyer {
         display: none;
     }
     .rechercher {
-        width: 60%;
+        width: 26vh;
+        font-size: 0.9rem;
     }
     .envoyerMobile {
         background-color:#0065FC;
-        padding: 0.8rem 1.3rem;
+        padding: 0.9rem 1rem;
         border-radius: 15px;
-        -webkit-border-radius: 15px;
-        -moz-border-radius: 15px;
-        -ms-border-radius: 15px;
-        -o-border-radius: 15px;
         font-size: 1.5rem;
         color:white;
-        margin-left: -20px;
-}
-      button {
-          border:none;
-      }
-}
-@media screen and (min-width:550px) {
-    button {
-        display: none;
     }
+    #btnRechercher {
+    border:none;
+    background-color: white;
+    padding: 0px;
+    }
+    .containerDeuxDivDeTroisArticles {
+    flex-direction: column;
+    }   
+    .filtresContainerFlitres {
+        flex-direction: column;
+    }
+     
 }
+@media screen and (min-width:600px) {
+    #btnRechercher {
+        display:none;             
+    }
+} 
 @media screen and (max-width: 760px) { 
     footer {
        flex-wrap: wrap;
@@ -513,7 +515,8 @@ footer p:hover {
         row-gap: 40px;        
         padding: 0 2rem 0 2rem;
         width: 100%;    
-    }    
+    } 
+       
 }
   
    
