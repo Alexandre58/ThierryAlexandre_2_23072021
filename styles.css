@@ -391,6 +391,13 @@ span {
     margin-top: 3rem;
 }
 /****************container de deux blocs activité Marseille*********/
+.h2ActiviteMarseille {
+    margin-top: 0;
+    font-size: 1.1em;
+    color:black;
+    font-weight: bold;
+}
+
 .div_container_deuxBlosDeTroisArticles,
 .div_container_deuxBlosDeTroisArticlesDuo {
     display: flex;
@@ -426,7 +433,7 @@ h4 {
     color: black;  
 }
 .div_container_deuxBlosDeTroisArticlesDuo {
-    margin-top: 60px;
+    margin-top: 32px;
 }
 /*********************bloc div horizontale*********/
 .divHorizontale {
@@ -435,21 +442,37 @@ h4 {
     width: 100%;
 }
 /*****************bloc par articles************/
+.vieuxPort, .calanques {
+    height: 480px;
+}
+.vieuxPort article div img ,.calanques article div img{
+      height: 419px;
+}
 .fortDePomegue {
    height: 240px;
 }
 .fortDePomegue article div img {
-    height: 165px;
+    height: 180px;
 }
 .ilesDuFrioul {
     margin-top: 40px;
-    height: 195px;
+    height: 200px;
 }
 .ilesDuFrioul article div img {
-    height: 135px;
+    height: 140px;
 }
 .notreDame {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+    height: 204px;
+}
+.notreDame article div img {
+    height: 154px;
+}
+.parc {
+    height: 220px;   
+}
+.parc article div img {
+    height: 160px;
 }
 .divHorizontale article img {
     object-fit: cover;
@@ -460,7 +483,7 @@ h4 {
 /**ombre activité Marseille****/
 .articleVerticale,.deuxArticlesHorizontales  {
   /*  margin-right: 1rem;*/
-box-shadow: 1px 0px 57px -29px rgba(0,0,0,0.65);
+box-shadow: 1px 0px 7px -2px rgba(0,0,0,0.65);
 }
 /*footer*/
 footer {
@@ -541,18 +564,7 @@ footer p:hover {
     }
     .filtresContainerFlitres {
         flex-direction: column;
-    }
-    
-    .div_hebergement_trois {
-        flex-wrap: wrap;
-    }
-    .hebergements_deuxFoisTrois {
-        flex-wrap: wrap;
-        height: auto;    
-    }
-    .containerDeuxDivDeTroisArticles {
-    flex-direction: column;
-    }      
+    }  
 }
 
 @media screen and (min-width:600px) {
@@ -560,52 +572,72 @@ footer p:hover {
         display:none;             
     }
 } 
-@media screen and (max-width: 760px) { 
-    footer {
-       flex-wrap: wrap;
-       height: 100%;
-    }   
-}
+
+/*
 @media screen and (max-width: 980px) and (min-width: 500px) {
     .div_hebergement_trois article img {
-           width: 19rem;
-    }
+        width: 19rem;
+ }
 }
-
+*/
 @media screen and (max-width: 1060px) { 
     .main_activite {
         flex-wrap: wrap;
      } 
     #main_hebergement_populaire {
        flex-wrap: wrap-reverse;
-       row-gap: 30px;
+       row-gap: 20px;
     }
-    .div_troisArticles  {   
-        row-gap: 40px;        
-        padding: 0 2rem 0 2rem;
-        width: 100%;    
+    .div_troisArticles  {          
+        padding: 0 2rem 0 2rem; 
+        height: 95vw;
+        width: 100%;  
     }
+    .div_hebergement_trois  {
+        width: 100%;
+        height: 180px;
+    }
+    .div_hebergement_trois article img {
+        padding: 5px;
+        width: 25rem;
+        height: 165px;
+ }
     /*hebergement marseille*/
     .articleHebergements img{ 
         height:114px;
         width: 25vw;      
-     }      
-}
-  
-@media screen and (max-width: 1200px) {
-    main { 
-        margin: 3%;
-     }
-    .main_hebergement_populaire {
-        display: flex;
-        column-gap:2%;  
-    }
-    .div_hebergement_trois article img {
-        width: 22rem;
-    }
-    .filtresContainer_div {
+     }  
+     .filtresContainer_div {
         margin: 10px;
     }
-    
-}  
+     /************container text and star *********/  
+.containerText {
+    margin-top: 35px;
+    margin-left: 3rem;
+}
+.containerText h3 {
+    font-size:1em;
+}
+.containerText p {
+    font-size: 0.8rem;
+}
+.etoilePopulaire {
+    margin-top: 0.7rem; 
+}
+   
+}
+/*media pour footer et hebergement trois articles*/
+@media screen and (max-width: 760px) { 
+    footer {
+       flex-wrap: wrap;
+       height: 100%;
+    }  
+    .div_hebergement_trois article img {
+        width: 15rem;
+ }
+ .div_troisArticles  {  
+             
+    height: 125vw; 
+}
 
+}
