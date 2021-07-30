@@ -1,17 +1,16 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;500&display=swap');*/
-*{
-    font-weight: 900;
-}
+
 /*color site*/
-.container_SixArticles,.div_troisArticles,.hebergements_deuxFoisTrois article,.div_hebergement_trois,footer,.rechercher {
+.container_SixArticles,
+.div_troisArticles,
+.div_hebergement_trois,footer,
+.rechercher {
     background-color: #F2F2F2;
 }
 body {
     font-family: 'Raleway', sans-serif;
     margin: 0;
-    padding: 0;
-    width: 100%; 
-  
+    padding: 0; 
 }
 header {
     width: 92%;
@@ -33,7 +32,6 @@ header {
     justify-content: flex-end;
     flex-grow: 1;
     color:#0065FC;
-   /* margin-left: 600px;*/
     column-gap: 30px;
 }
 /*effet sur lien en tete*/
@@ -60,9 +58,10 @@ a {
 
 /*FIN effet sur lien en tete*/
 /*******container deuxieme partie header*********/
-/*container h2 +p*/
+
 .trouverHebergement {
     margin-bottom: 3rem;
+    
 }
 /*container element de recherche*/
 .trouverHebergement_Recherche {
@@ -179,42 +178,37 @@ input:focus {
     padding-top: 4px;
 }
 
-/******************************main container ***/
+/******************************MAIN CONTAINER *********************/
 /*****************main container**********/
 main {
     display: flex;
    flex-direction: column;
-    width: 92%;
-    margin: auto;
-    row-gap: 1%;
+   justify-content: space-around;
+   margin: 3rem;
+  
+  
 }
 /*ci-dessous border radius des elements*/
-.container_SixArticles,.div_troisArticles,.hebergements_deuxFoisTrois article,.div_hebergement_trois,.articleVerticale,.divHorizontale,.deuxArticlesHorizontales  {
+.container_SixArticles,
+.div_troisArticles,.articleHebergements a ,
+.div_hebergement_trois,.articleVerticale,.divHorizontale,
+.deuxArticlesHorizontales  {
     border-radius: 20px;
 }/*********************************reglages associés***********************/
 /*border radius des images*/
-.hebergements_deuxFoisTrois article img,.articleVerticale article img,.divHorizontale article img {
+.hebergements_deuxFoisTrois article img,
+.articleVerticale article img,
+.divHorizontale article img {
     border-radius: 20px 20px 0 0;
 }
 /*********************************reglages associés***********************/
 
 /*reglage de quelques <p>*/
-.hebergements_deuxFoisTrois article div p,.div_hebergement_trois article p {
-    font-weight: normal;
-    color:black;
-    font-size: 0.8rem;
-    margin: 0 0 0px 5px;
-}
-/*reglage des star*/
-.etoile {
-    display: flex;
-    padding: 0.5rem;
-    color: #0065fc ;
-}
+
 .fas {
     color: #0065fc ;
 }
-#starWhite{
+.starWhite{
     opacity: 0.3;
 }
 /************hebergement Marseille****************/
@@ -222,60 +216,93 @@ main {
 /************section container des deux dix**************/
 .main_hebergement_populaire {
     display: flex;
-    column-gap: 5%; 
+    column-gap: 3vw;
+    
+   
 }
 /*dimension du bloc hebergement Marseille**********/
+/*DEBUT HEBERGEMENT*/
+.h2Hebergement {
+    font-weight: bold;
+    margin-top: 50px;
+    font-size: 17px;
+    width: 70%;
+    height: 10px;
+    
+}
 .container_SixArticles {
     display: flex;
     flex-direction: column;
-    height: auto;
-    flex: 30 1 0px;
+
 }
-/*****h2 hebergement Marseille*********/
+/*****hebergement Marseille*********/
 .div_hebergement_sixArticles {
-    margin-left: 2rem;
+    display: flex;
+    
+}
+.div_hebergement_sixArticles {
+    margin-left: 3rem;
 }
 /*container 3 articles hebergement Marseille*************/
 /*reglage image***/
 .hebergements_deuxFoisTrois {
-    display: flex;  
-    margin-top: 5%;
-    row-gap: 3vw;
+    display: flex; 
+    padding: 3vh; 
+}
+/*pour TOUT LES ARTICLES DU SITE*/
+article {
+    padding:3px;
 }
 /**********container article***************/
-.hebergements_deuxFoisTrois article {
+.articleHebergements a {
+   display: flex;
+   flex-direction: column;
+   background-color: white;
+    margin: 0 3vh 0 3vh;
+   height: 12.5rem;
+
+}
+ /********************Container text***************/
+.articleHebergements img{
+    object-fit: cover; 
+    height:114px;
+    width: 17vw;
+    margin: 3px;
+    border-radius: 20px 0 0 20px;
+ }
+ .containerTextHebergement {
     display: flex;
     flex-direction: column;
-    justify-content:space-around;
-    background-color: white;
-    width: 100%;
-    height: auto;
-    margin-left:3%;
-    margin-right: 3%; 
-    border:0.2rem solid white;
+    border: solid 1px black;
+    margin-left: 1rem; 
 }
-.hebergements_deuxFoisTrois article img{
-    object-fit: cover;
-    width: 100%;
-    height: 98px;  
- }
  h3 {   
-     font-size: 1rem;
-     margin: 5px 0 2px 6px;  
+     font-size:1em;
+     color:black;
+     font-weight: bold;
+    border: solid 1px black;
+      
  }
- /********************Container text***************/
-.containerText {
-  height: 60px;
+
+.containerTextHebergement p {
+    font-size: 0.9rem;
+    border: solid 1px black;
+
+ }
+ .etoile {
+    display: flex;
+    color: #0065fc ;
 }
-.pHoverSixAticle a {
-  color:black;
-}
+
 #pHebergements_deuxFoisTrois {
     margin: 60px 0 20px 20px;
 }
 .pHoverSixAticle :hover {
     font-size: 1.1rem; 
 }
+.pHoverSixAticle a {
+    color:black;
+  }
 /********************* LES PLUS POPULAIRES****************/
 /***********Container pour les trois articles les plus populaire**********/
 .div_troisArticles {
@@ -283,46 +310,54 @@ main {
     flex-direction: column;
     justify-content: space-around;   
     padding: 0 2rem 0 2rem; 
-    flex: 1 1 20%;  
+    
 }
-/********Container h2 et p **************/
 .div_hebergement_troisArticles {
-    display: flex;
+    display: flex; 
     justify-content: space-between;
+    height: 12px;
+}
+.div_hebergement_troisArticles i{
+    margin-top: 18px;
+    color: black;
+}
+.h2Populaire {
+    font-weight: bold;
+    font-size: 17px;
 }
 /*********Container articles les plus populaires******/
-.containerText {
-    display: flex;
-    flex-direction: column;
-    row-gap: 17%;
-     height: auto;   
-}
 .div_hebergement_trois  {
-    height: auto;
+    height: 143px;
     background-color: white;
 }
-/*cliquable*/
-.div_hebergement_trois article a{
-    display: flex;  
+.articlesLesPlusPopulaires a{
+    display: flex;
 }
+/*cliquable*/
 .div_hebergement_trois article img{
-    object-fit: cover;
-    border:0.2rem solid white;
-    width: 9rem;
-    height: 135px;
+    object-fit: cover; 
+    height:133px;
+    width:7rem;
+    margin: 1px;
     border-radius: 20px 0 0 20px;
+}
+.containerText {
+    display: flex;
+    flex-direction: column;  
+}
+
+.containerText p {
+   padding-top: 0.5rem;
+   
+}
+span {
+    font-weight: bold;
 }
 .etoilePopulaire {
     display: flex;   
-    color:#0065FC;
+    color:#0065FC;  
 }
-.div_hebergement_trois article a .etoile {
-    margin-top: 4rem;
-}
- /*marging bas les plus populaires*/
- .div_hebergement_trois {
-    margin-bottom: 30px;
-}
+
 /*************activite a marseille*******/
 /********************Container activité Marseille***************/
 .main_activite {
@@ -331,9 +366,11 @@ main {
     margin-top: 3rem;
 }
 /****************container de deux blocs activité Marseille*********/
-.div_container_deuxBlosDeTroisArticles,.div_container_deuxBlosDeTroisArticlesDuo {
+.div_container_deuxBlosDeTroisArticles,
+.div_container_deuxBlosDeTroisArticlesDuo {
     display: flex;
    flex-direction: column; 
+   width: 100%;
 }
 /************Container trois blocs*************/
 .containerDeuxDivDeTroisArticles {
@@ -352,7 +389,7 @@ main {
 .articleVerticale article img{
     object-fit: cover;
     width: 100%;
-    height: 390px;
+    height: 408px;
 }
 .articleVerticale article {
     padding-bottom: 10px;
@@ -374,7 +411,7 @@ h4 {
 }
 /*****************bloc par articles************/
 .fortDePomegue {
-   height: 230px;
+   height: 240px;
 }
 .fortDePomegue article div img {
     height: 165px;
@@ -425,6 +462,7 @@ footer p:hover {
     font-weight:700;
 }
 /************************media query********************/
+
 @media screen and (max-width:600px){  
     .header_h1 {
         display:grid;
@@ -471,10 +509,14 @@ footer p:hover {
         color:white;
     }
     #btnRechercher {
-    border:none;
-    background-color: white;
-    padding: 0px;
+        border:none;
+        background-color: white;
+        padding: 0px;
     }
+    .filtresContainerFlitres {
+        flex-direction: column;
+    }
+    
     .div_hebergement_trois {
         flex-wrap: wrap;
     }
@@ -484,12 +526,9 @@ footer p:hover {
     }
     .containerDeuxDivDeTroisArticles {
     flex-direction: column;
-    }   
-    .filtresContainerFlitres {
-        flex-direction: column;
-    }
-     
+    }      
 }
+
 @media screen and (min-width:600px) {
     #btnRechercher {
         display:none;             
@@ -501,13 +540,13 @@ footer p:hover {
        height: 100%;
     }   
 }
-@media screen and (max-width: 960px) and (min-width: 500px) {
+@media screen and (max-width: 980px) and (min-width: 500px) {
     .div_hebergement_trois article img {
            width: 19rem;
     }
 }
 
-@media screen and (max-width: 960px) { 
+@media screen and (max-width: 1060px) { 
     .main_activite {
         flex-wrap: wrap;
      } 
@@ -519,9 +558,28 @@ footer p:hover {
         row-gap: 40px;        
         padding: 0 2rem 0 2rem;
         width: 100%;    
-    } 
-       
+    }
+    /*hebergement marseille*/
+    .articleHebergements img{ 
+        height:114px;
+        width: 25vw;      
+     }      
 }
   
-   
+@media screen and (max-width: 1200px) {
+    main { 
+        margin: 3%;
+     }
+    .main_hebergement_populaire {
+        display: flex;
+        column-gap:2%;  
+    }
+    .div_hebergement_trois article img {
+        width: 23rem;
+    }
+    .filtresContainer_div {
+        margin: 10px;
+    }
+    
+}  
 
