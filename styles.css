@@ -3,9 +3,17 @@
 /*color site*/
 .container_SixArticles,
 .div_troisArticles,
-.div_hebergement_trois,footer,
-.rechercher {
+.div_hebergement_trois,
+.rechercher
+footer {
     background-color: #F2F2F2;
+}
+p,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: bold;
 }
 body {
     font-family: 'Raleway', sans-serif;
@@ -37,6 +45,7 @@ header {
 /*effet sur lien en tete*/
 a {
     text-decoration: none;
+    color: black;
 }
 .nav_pHebergement:hover {
     border-top:3px solid #0065FC;
@@ -85,9 +94,13 @@ a {
 input:focus {
     background-color:rgb(223, 205, 205) ;
     outline: none;
+    
 }
 .rechercher::placeholder {
     color: black;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+
 }
 .envoyer {
     border-radius:0 15px 15px 0;
@@ -98,11 +111,16 @@ input:focus {
     text-align: center;  
 }
 .envoyer:hover {
-    background-color: #13315e;
-    width: 11rem;  
+    background-color: #4789ec;
+  
 }
 
 /***********partie recherche*************/
+.filtresContainerH2 {
+    padding-bottom: 5px;
+    margin-top: 13px;
+    font-size: 1.2rem;
+}
 .trouverHebergement_font-awesome {
     background-color: #DEEBFF;
     padding: 0.8rem 1.2rem ;
@@ -154,10 +172,7 @@ input:focus {
     border-radius: 50px;
     text-align: center;   
 }
-.filtresContainer_div p:hover {
-  font-size: 1.2rem;
-  box-shadow:none;
-}
+
 /****container plus de 50 logements****/
 .filtresContainersIcone {
     display: flex;
@@ -224,7 +239,7 @@ main {
 /*DEBUT HEBERGEMENT*/
 .h2Hebergement {
     font-weight: bold;
-    margin-top: 50px;
+    margin-top: 35px;
     font-size: 17px;
     width: 70%;
     height: 10px;
@@ -249,10 +264,7 @@ main {
     display: flex; 
     padding: 3vh; 
 }
-/*pour TOUT LES ARTICLES DU SITE*/
-article {
-    padding:3px;
-}
+
 /**********container article***************/
 .articleHebergements a {
    display: flex;
@@ -260,6 +272,7 @@ article {
    background-color: white;
     margin: 0 3vh 0 3vh;
    height: 12.5rem;
+
 
 }
  /********************Container text***************/
@@ -273,25 +286,24 @@ article {
  .containerTextHebergement {
     display: flex;
     flex-direction: column;
-    border: solid 1px black;
     margin-left: 1rem; 
 }
- h3 {   
-     font-size:1em;
-     color:black;
-     font-weight: bold;
-    border: solid 1px black;
-      
- }
-
+.containerTextHebergement h3 {
+    margin-top: 0;
+    font-size:0.8em;
+    color:black;
+    font-weight: bold;
+}
 .containerTextHebergement p {
-    font-size: 0.9rem;
-    border: solid 1px black;
-
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin-top: -0.5rem;
+    color:black;
  }
  .etoile {
     display: flex;
     color: #0065fc ;
+    margin-top: 0.8rem;
 }
 
 #pHebergements_deuxFoisTrois {
@@ -340,22 +352,35 @@ article {
     width:7rem;
     margin: 1px;
     border-radius: 20px 0 0 20px;
+    padding:3px;
 }
+  
+/************container text and star*********/
 .containerText {
     display: flex;
     flex-direction: column;  
+    margin-left: 2rem;
 }
-
+.containerText h3 {
+    margin-top: 0;
+    font-size:0.8em;
+    color:black;
+    font-weight: bold;
+}
 .containerText p {
-   padding-top: 0.5rem;
-   
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin-top: -0.5rem;
+    color:black;
+
 }
 span {
     font-weight: bold;
 }
 .etoilePopulaire {
-    display: flex;   
-    color:#0065FC;  
+    display: flex;
+    color: #0065fc ;
+    margin-top: 0.8rem; 
 }
 
 /*************activite a marseille*******/
@@ -442,8 +467,9 @@ footer {
     display: flex;
    column-gap: 20%;
    width: 100%;
-   height: 12vw;
+   height: 100%;
    margin-top: 40px;
+   background-color: #F2F2F2;
 }
 h5 {
     font-size: 1rem ;
@@ -575,7 +601,7 @@ footer p:hover {
         column-gap:2%;  
     }
     .div_hebergement_trois article img {
-        width: 23rem;
+        width: 22rem;
     }
     .filtresContainer_div {
         margin: 10px;
