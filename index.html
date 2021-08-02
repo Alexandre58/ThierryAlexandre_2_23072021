@@ -15,6 +15,7 @@
     <title>Reservia</title>
 </head>
 <body>
+ <div class="container">
     <header>
           <!--/*****container header premiere partie****/-->
           <div class="header_h1">
@@ -25,11 +26,11 @@
                 </div> 
           <!--/****header nav*****/-->        
                 <nav class="header_nav">
-                         <div class="nav_pHebergement nav_pHebergementMediaheber">                 
-                             <p><a href="#main_hebergement_populaire">Hébergements</a></p> 
+                         <div class="nav_pHebergementHeber">                 
+                             <p><a href="#section_hebergement_populaire">Hébergements</a></p> 
                          </div>     
                   
-                         <div class="nav_pHebergement nav_pHebergementMediaActivite">                 
+                         <div class="nav_pHebergementHeberActivite">                 
                               <p><a href="#activite">Activité</a></p> 
                           </div> 
                  </nav>          
@@ -83,13 +84,14 @@
   </header>
   <!--main container-->
   <main>
+     <div class="des-deuxSectionsPricipales">
         <!--Hébergement à Marseille-->
-        <section class="main_hebergement_populaire">
-            <div class="container_SixArticles">
+        <section class="container_SixArticlesEtH2">
+ 
                          <div class="div_hebergement_sixArticles">
                               <h2 class="h2Hebergement">Hébergements à Marseille</h2>
                         </div>
-                        <div class="hebergements_deuxFoisTrois">
+                        <div class="containerDesSixArticles">
                               <article class="articleHebergements"> 
                                     <a href="#">          
                                     <div>                                   
@@ -99,16 +101,14 @@
                                     <div class="containerTextHebergement">
                                           <h3> Auberge La cannebiére</h3>
                                           <p>Nuit à partir de 25&euro;</p>
-                                    </div>      
-                                    <div class="etoile">
-                                          <ul>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star starWhite"></i></li>
-                                          </ul>
-                                    </div>                              
+                                          <ul class="etoile">
+                                                <li><i class="fas fa-star"></i>
+                                                <li><i class="fas fa-star"></i>
+                                                <li><i class="fas fa-star"></i>
+                                                <li><i class="fas fa-star"></i>
+                                                <li><i class="fas fa-star starWhite"></i>
+                                          </ul>          
+                                   </div>                              
                               </a>
                               </article>
                               <article class="articleHebergements">
@@ -118,18 +118,16 @@
                                       </div>
                                       <div class="containerTextHebergement">
                                             <h3>Hôtel du port</h3>
-                                            <p>Nuit à partir de 52&euro;</p>
-                                          </div>      
-                                          <div class="etoile">
-                                                <ul>
-                                                      <li><i class="fas fa-star"></i></li>
-                                                      <li><i class="fas fa-star"></i></li>
-                                                      <li><i class="fas fa-star"></i></li>
-                                                      <li><i class="fas fa-star"></i></li>
-                                                      <li><i class="fas fa-star starWhite"></i></li>
-                                                </ul>
-                                          </div>   
-                                    </a>                     
+                                            <p>Nuit à partir de 52&euro;</p>                     
+                                          <ul class="etoile">
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star starWhite"></i></li>
+                                          </ul>
+                                     </div>   
+                              </a>                     
                               </article>
                               <article class="articleHebergements">
                                     <a href="#">
@@ -138,88 +136,78 @@
                                       </div>
                                       <div class="containerTextHebergement">
                                             <h3>Hotel les mouettes</h3>
-                                            <p>Nuit à partir de 76&euro;</p>
-                                          </div>      
-                                          <div class="etoile">
-                                                <ul>
-                                                      <li><i class="fas fa-star"></i></li>
-                                                      <li><i class="fas fa-star"></i></li>
-                                                      <li><i class="fas fa-star"></i></li>
-                                                      <li><i class="fas fa-star"></i></li>
-                                                      <li><i class="fas fa-star starWhite"></i></li>
-                                                </ul>
-                                          </div>   
+                                            <p>Nuit à partir de 76&euro;</p>                
+                                          <ul class="etoile">
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star starWhite"></i></li>
+                                          </ul>
+                                     </div>   
+                                    </a>
+                              </article>     
+                              <article class="articleHebergements" id="section_hebergement_populaire">
+                                    <a href="#">
+                                    <div>
+                                          <img src="./src/images/hebergement/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="photos-de-la-chambre"/>
+                                          </div>
+                                          <div class="containerTextHebergement">
+                                                <h3>Hotel de la mer</h3>
+                                                <p>Nuit à partir de 45&euro;</p>
+                                          <ul class="etoile">
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star starWhite"></i></li>
+                                          </ul>
+                                    </div>   
                                     </a>
                               </article>
-                              
-                        </div>
-                        <div class="hebergements_deuxFoisTrois">        
-                                    <article class="articleHebergements">
-                                          <a href="#">
-                                          <div>
-                                                <img src="./src/images/hebergement/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="photos-de-la-chambre"/>
-                                            </div>
-                                            <div class="containerTextHebergement">
-                                                  <h3>Hotel de la mer</h3>
-                                                  <p>Nuit à partir de 45&euro;</p>
-                                                </div>      
-                                                <div class="etoile">
-                                                      <ul>
-                                                            <li><i class="fas fa-star"></i></li>
-                                                            <li><i class="fas fa-star"></i></li>
-                                                            <li><i class="fas fa-star"></i></li>
-                                                            <li><i class="fas fa-star"></i></li>
-                                                            <li><i class="fas fa-star starWhite"></i></li>
-                                                      </ul>
-                                                </div>   
-                                          </a>
-                                    </article>
-                                    <article class="articleHebergements">
-                                          <a href="#">
-                                          <div>
-                                                <img src="./src/images/hebergement/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="photos-de-la-chambre"/>
-                                            </div>
-                                            <div class="containerTextHebergement">
-                                                  <h3> Auberge Le Panier</h3>
-                                                  <p>Nuit à partir de 23&euro;</p>
-                                                </div>      
-                                                <div class="etoile">
-                                                      <ul>
-                                                            <li><i class="fas fa-star"></i></li>
-                                                            <li><i class="fas fa-star"></i></li>
-                                                            <li><i class="fas fa-star"></i></li>
-                                                            <li><i class="fas fa-star"></i></li>
-                                                            <li><i class="fas fa-star starWhite"></i></li>
-                                                      </ul>
-                                                </div>   
-                                          </a>
-                                    </article>
-                                    <article class="articleHebergements">
-                                          <a href="">
-                                          <div>
-                                                <img src="./src/images/hebergement/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="photos-de-la-chambre"/>
-                                            </div>
-                                            <div class="containerTextHebergement">
-                                                  <h3>Hôtel chez Amina</h3>
-                                                  <p>Nuit à partir de 96&euro;</p>
-                                                </div>      
-                                                <div class="etoile">
-                                                      <ul>
-                                                            <li><i class="fas fa-star"></i></li>
-                                                            <li><i class="fas fa-star"></i></li>
-                                                            <li><i class="fas fa-star"></i></li>
-                                                            <li><i class="fas fa-star"></i></li>
-                                                            <li><i class="fas fa-star starWhite"></i></li>
-                                                      </ul>
-                                                </div>   
-                                          </a>
-                                    </article>
-                        </div>
-                        <p class="pHoverSixAticle" id="pHebergements_deuxFoisTrois"><a href="#">Afficher plus</a></p>
-            </div>
+                              <article class="articleHebergements">
+                                    <a href="#">
+                                    <div>
+                                          <img src="./src/images/hebergement/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="photos-de-la-chambre"/>
+                                          </div>
+                                          <div class="containerTextHebergement">
+                                                <h3> Auberge Le Panier</h3>
+                                                <p>Nuit à partir de 23&euro;</p>
+                                          <ul class="etoile">
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star starWhite"></i></li>
+                                          </ul>
+                                    </div>   
+                                    </a>
+                              </article>
+                              <article class="articleHebergements">
+                                    <a href="">
+                                    <div>
+                                          <img src="./src/images/hebergement/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="photos-de-la-chambre"/>
+                                          </div>
+                                          <div class="containerTextHebergement">
+                                                <h3>Hôtel chez Amina</h3>
+                                                <p>Nuit à partir de 96&euro;</p>
+                                          <ul class="etoile">
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star starWhite"></i></li>
+                                          </ul>
+                                    </div>   
+                                    </a>
+                              </article>
+                      </div>
+                      
+                        <p class="pHoverSixAticle" id="pcontainerDesSixArticles"><a href="#">Afficher plus</a></p>
+        </section>
             <!--Les plus populaires-->
-              <div class="div_troisArticles">
-                        <div class="div_hebergement_troisArticles">
+              <section class="div_troisArticles">
+                        <div class="divH2EtIconePopulaire">
                               <h2 class="h2Populaire">Les plus populaires</h2>  
                               <i class="fas fa-chart-line"></i>
                         </div>  
@@ -283,13 +271,13 @@
                                   </a>
                               </article>
                        </div>
-             </div>  
         </section>
+      </div>
         <!--Activité à Marseille-->
-        <section class="main_activite">
+        <section class="main_activite" id="activite">
             <div class="div_container_deuxBlosDeTroisArticles">
                   <div>
-                        <h2 class="h2ActiviteMarseille">Activité à Marseille</h2>
+                        <h2 class="h2Activite">Activité à Marseille</h2>
                   </div>
                  <div class="containerDeuxDivDeTroisArticles">
                        <div class="divVerticale">
@@ -405,5 +393,6 @@
         </div>
      
   </footer>
+</div>
 </body>
 </html>
