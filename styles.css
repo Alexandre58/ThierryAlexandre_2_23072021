@@ -3,7 +3,7 @@
 /*color site*/
 .container_SixArticlesEtH2,
 .div_troisArticles,
-.div_hebergement_trois,
+.div_populaire_trois,
 .rechercher
 .envoyer
 footer {
@@ -21,10 +21,11 @@ body {
     margin: 0;
     padding: 0; 
     
+    
 }
 .container {
     max-width: 1440px;
-    margin:0 auto;
+    margin:0 ;
 }
 header {
     width: 92%;
@@ -40,20 +41,16 @@ header {
     width: 6.5rem;
 }
 /*******header nav******/
-.header_nav {
+.header_nav{
     display: flex; 
     justify-content: flex-end;
     margin-left: 65%;
-    color:#0065FC;
     column-gap: 5%;
 }
 /*effet sur lien en tete*/
 a {
     text-decoration: none;
-    
 }
-
-
 .nav_pHebergementHeber/*:hover*/ {
     border-top:3px solid #0065FC;
     width: 150px;
@@ -61,17 +58,20 @@ a {
 .nav_pHebergementHeber p {
     margin-top:40px;
     text-align: center;
-    width: 150px;  
+    width: 150px; 
+    font-weight: normal;
 }
 .nav_pHebergementHeberActivite:hover {
     border-top:3px solid #0065FC;
     width: 100px;
+    color: black !important;
 }
 .nav_pHebergementHeberActivite p {
     margin-top:40px;
     text-align: center;
     width: 100px;  
     color: black !important;
+    font-weight: normal;
 }
 .nav_pHebergementInscrire {
     margin-left: 30px; 
@@ -174,11 +174,12 @@ input:focus {
 .filtresContainer_div {
     display: flex;
     align-items: center;
-    margin: 0 1rem 0 0;
+    margin: 0 1rem 0.5rem 0;
     padding-right: 1rem;
     height: 47px;
     border: 1px solid #DEEBFF;
     border-radius:50px ;
+   
 }
 .filtresContainer_div:hover {
     box-shadow: 2px -7px 28px 7px rgba(182, 171, 171, 0.91) inset;
@@ -201,8 +202,14 @@ input:focus {
     margin: 30px 0 10px 0;
     justify-content: space-between; 
     width:100%;
+    color: black;
+    width: 35%;
 }
-
+.filtresConainertsIcone p {
+    color: black;
+    font-weight: normal;
+    font-size: 0.9rem;
+}
 .fas500logements {
     border: 1px solid #0065Fc;
     border-radius: 50px;
@@ -220,7 +227,7 @@ input:focus {
 /*ci-dessous border radius des elements*/
 .container_SixArticlesEtH2,
 .div_troisArticles,.articleHebergements a ,
-.div_hebergement_trois,.articleVerticale,.divHorizontale,
+.div_populaire_trois,.articleVerticale,.divHorizontale,
 .deuxArticlesHorizontales  {
     border-radius: 20px;
 }/*********************************reglages associés***********************/
@@ -250,7 +257,7 @@ main {
 }
 .des-deuxSectionsPricipales {
     display: flex;
-    column-gap: 41px;
+    column-gap: 3%;
 }
 /*dimension du bloc hebergement Marseille**********/
 /*DEBUT HEBERGEMENT*/
@@ -280,13 +287,15 @@ main {
    display: flex;
    flex-direction: column;
    background-color: white;
+   width: auto;
    height:13rem;
    border-radius: 20px 20px;
+   box-sizing: border-box;
 }
 .articleHebergements img{
     object-fit: cover; 
     height:7.3rem;
-    width: 240px;
+    width: 17vw;
     border:2px solid white;
     margin: 3px;
     border-radius: 20px 0 0 20px;
@@ -348,30 +357,35 @@ main {
     margin-top: 27px;
     color: black;   
 }
-.div_hebergement_trois  {
+.div_populaire_trois  {
     display: flex;
     background-color: white;
-    width: 21.5rem;
+    width: 100%;
     height: 8.9rem;
+
    
 }
 .articlesLesPlusPopulaires a {
     display: flex;
+    width: auto;
 }
-.div_hebergement_trois article img{
+.div_populaire_trois article a img{
     object-fit: cover; 
-    width:8.7rem;
-    height:8.5rem;
+    width:9vw;
+    min-width: 90px;
+    height:8.2rem;
     border-radius: 20px 0 0 20px;
     border: 5px solid white;
 }
+
 /************container text and star*********/
 .containerText {
-    display: flex;
+    display: bloc;
     flex-direction: column; 
-    width: 12rem;
-    height: 7.5rem;
-    margin-left: 23px;
+    width: 40%;
+    height: 130px;
+    margin-left: 3px;
+    box-sizing: border-box;
 }
 .containerText h3 {
     font-size: 13px;
@@ -399,6 +413,9 @@ main {
    width: 92%;
    margin: 50px 0;
 }
+.div_container_deuxBlosDeTroisArticlesDuo {
+    margin-top:65px;
+  }
 /****************container de deux blocs activité Marseille*********/
 .h2ActiviteMarseille {
     font-size: 1.3rem;
@@ -418,12 +435,11 @@ main {
     column-gap: 2vw;
     flex-wrap:nowrap;
     
-    
 }
 /****reglage image vieux port et calanques********/
 .articleVerticale article img{
     object-fit: cover;
-    width: 300px;
+    width: 33vw;
     height: 386px;
 }
 .vieuxPort, .calanques {
@@ -456,9 +472,7 @@ main {
 .parc article div img {
     height: 153px;
 }
-.div_container_deuxBlosDeTroisArticlesDuo {
-  margin-top:65px;
-}
+
 /***********horizontal*********/
 .divHorizontale {
     display: flex;
@@ -483,7 +497,7 @@ main {
 footer {
    display: flex;
    column-gap: 20%;
-   width:100%;
+   width:100vw;
    height:auto;
    background-color: #F2F2F2;
 }
@@ -506,163 +520,186 @@ footer p:hover {
     font-weight:700;
 }
 /************************media query********************/
-@media screen and (max-width: 960px) { 
-        main {     
-            width: 100vw;
-        }
-        .section_hebergement_a_marseille {
-            flex-wrap: wrap-reverse;
-            width: 100vw;
-            height: auto;
-        } 
-       
-       
-        .container_SixArticlesEtH2,.div_troisArticles {
-            border-radius: 0px;      
-        }
-        .header_img img {
-            width: 5rem;
-        } 
-         /*POPULAIRE/*/
-        .div_troisArticles  { 
-            width: 100%;                        
-           align-items: center;
-        }
-        .divH2EtIconePopulaire {
-            width: 100vw;
-            justify-content: space-between;
-        }
-        .h2Populaire {
-            margin-top: 2vw; 
-        }
-        .div_hebergement_trois  {
-            background-color: white;
-            width: 90vw;
-        }
-                     /************container text and star*********/
-                     .containerText { 
-                        width: 280px;
-                        height: 190px;
-                        margin-top: 20px;
-                        margin-left: 50vw;
-                        justify-content: space-around;
-                    }
-                    .containerText h3 {
-                        font-size:1.5em;   
-                    }
-                    .containerText p {
-                        font-size: 1rem;   
-                    }
-                    .etoilePopulaire {      
-                        margin-top: 5vh;
-                    }
-     /*Heberement marseille/*/
-       
-         .main_activite {
-             flex-wrap: wrap;
-         }
-         .divHorizontale article img {
-            width: 47vw;
-        }
-        .div_hebergement_trois article img {
-            width: 25rem;
-            height:217px;
-        }
-   
-     
-        /*ACTIVITE*/
-        .main_activite {
-          width: 100vw;
-            
-        }
-        .vieuxPort,.calanques {
-            margin-left:2vw;
-        }
-        .articleVerticale article img{
-            width: 45vw;  
-        }
-        .section_hebergement_a_marseille {
-            margin-left: -2vw;
-        }
-        .filtresContainerFlitres {
-            flex-direction: column;
-            
-        } 
-        .filtresContainer {
-            row-gap: 12px;
-        }
-        .container_SixArticlesEtH2 {
-            width: 100vw;
-            padding: 5rem;
-        }
-        }
 
-        /*media pour footer et hebergement trois articles*/
-/*@media screen and (max-width: 760px) { 
-    
-        .header_nav {
-            width: 100vw;
-            margin-left: 0px;
-            justify-content: space-between;
-        }
-    
-        footer {
-            flex-wrap: wrap;
-            height: 100%;
-        } 
-}*/
-/*Grid header*/
-@media screen and (max-width:600px){  
-        .header_h1 {
-            display:grid;
-            grid-template-columns: repeat(6,1fr);
-            grid-template-rows: 2fr;  
-            width: 90%;
-        }
-        .nav_pHebergementInscrire {
-            grid-column: 5/7;
-            grid-row: 1;
-        }
-        /*Nav Hebergement changement des barres hover*/
-        .nav_pHebergement:hover {
+@media screen and (max-width:600px) {
+     main {
+         width: 100%;
+     }
+    .header_h1 {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .nav_pHebergementInscrire {
+        position: absolute;
+       margin-left: 90%; 
+       color: #0065FC;
+       margin-left: 150vw;
+
+    } 
+    .nav_pHebergement:hover {
+        border-bottom:3px solid #0065FC;
+        width: 100%;
+        border-top: none;
+    }
+    .nav_pHebergementInscrire:hover {
+        border-top:none;
+    }
+    .trouverUnHebergement_form {
+        width: 308px;
+        height: 45px;    
+    }
+    .envoyer {
+        display: none;
+    }
+    .envoyerMobile {
+        background-color:#0065FC;
+        padding: 0.9rem 1rem;
+        border-radius: 15px;
+        font-size: 1rem;
+        color:white;
+    }
+    #btnRechercher {
+        border:none;
+        background-color: white;
+        padding: 0px;
+    }
+    .containerDeuxDivDeTroisArticles {
+        flex-wrap:wrap;
+
+    }
+    footer {
+        flex-wrap: wrap;
+        column-gap: 20%;
+       
+       
+     }
+     /*populaire et hebergement*/
+     .des-deuxSectionsPricipales {
+        display: flex;
+        flex-direction: column-reverse;
+       
+    }
+    /*ACTIVITE*/
+
+    .main_activite {
+       flex-direction: column;
+        column-gap: 2.5vw;
+     }
+     /*HEADER NAV*/
+     .header_nav{
+        width: 100%;
+        margin: 0;
+        color:#0065FC;
+        justify-content: space-between;
+    }
+
+     /*S INSCRIRE*/
+     .nav_pHebergementInscrire {
+        margin-left: 80%; 
+        color: blue;
+    }
+    /*hebergement activite en header*/
+    .nav_pHebergementHeber/*:hover*/ {
+        border-top:none;
+        width: 150px;
+    }
+    .nav_pHebergementHeberDessous {
         border-top:3px solid #0065FC;
-        }
-        .header_nav {
-            grid-column: 1/7;
-            grid-row:2;
-            column-gap: 35%;
-        }  
-        .nav_pHebergement:hover {
-            border-bottom:3px solid #0065FC;
-            width: 100%;
-            border-top: none;
-        }
-        .nav_pHebergementInscrire:hover {
-            border-top:none;
-        }
-        .trouverUnHebergement_form {
-            width: 308px;
-            height: 45px;    
-        }
-        .envoyer {
-            display: none;
-        }
-        .envoyerMobile {
-            background-color:#0065FC;
-            padding: 0.9rem 1rem;
-            border-radius: 15px;
-            font-size: 1rem;
-            color:white;
-        }
-        #btnRechercher {
-            border:none;
-            background-color: white;
-            padding: 0px;
-        }
+        width: 150px;
+    }
+    .nav_pHebergementHeber p {
+        margin-top: 0;
+        text-align: center;
+        width: 150px;
+        color: blue;  
+    }
+    .nav_pHebergementHeberActivite:hover {
+        border-top:3px solid #0065FC;
+        width: 100px;
+    }
+    body .nav_pHebergementHeberActivite p {
+        margin-top: 0;
+        text-align: center;
+        width: 100px;  
+        color: black!important;
+    }
+    /*Filtres*/
+    .filtresContainerFlitres {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .filtresContainerH2 {
+       margin-left: 20px;
+    }
+    .filtresContainer_div{
+        font-size: 0.6rem;
+    }
+    .filtresContainer_div p i{
+        font-size: 0.8rem;
+    }
+    .filtresConainertsIcone {
+        width: 100%;
+    }
+    /*LES PLUS POPULAIRES*/
+    .div_troisArticles, .container_SixArticlesEtH2{
+        border-radius: 0;
+}
+    .divH2EtIconePopulaire {
+          width: 100%;
+    }
+    /*HEBERGEMENT A MARSEILLE*/
+    .articleHebergements a{
+        width: 100%;
+        height:13rem;
+     }
+     .articleHebergements img{
+         height:7.3rem;
+         width: 80vw;
+      }
+      /*ACTIVITE*/
+      .containerDeuxDivDeTroisArticles {
+        padding: 0 4vw;
+      }
+      .div_container_deuxBlosDeTroisArticlesDuo, .div_container_deuxBlosDeTroisArticles{
+        margin-top:0px;
+      }
+      .h2Activite {
+         margin-left: 20px;
+      }
+      .containerDeuxDivDeTroisArticles {
+        row-gap: 6vw;
+      }
+      .articleVerticale article img{
+        width: 90vw;
+        height: 130px;
+      
+      }
+      .vieuxPort, .calanques {
+        height: 191px;
+     }
+     .deuxArticlesHorizontales {
+         height: 193px;
+     }
+     .deuxArticlesHorizontales article a img {
+        width: 90vw;
+         height: 132px;
+     }
+     .fortDePomegue {
+        margin-bottom: 0;
+        margin-bottom: 4vh;
+     }
+     .notreDame ,.ilesDuFrioul{
+        margin-bottom: 4vh;
+
+
+    }
 }
 
 @media screen and (min-width:600px) {
-    #btnRechercher {
-        display:none;             
-    }
+#btnRechercher {
+    display:none;             
+}
 } 
+        
