@@ -190,8 +190,8 @@ input:focus {
 }
 /*Filtres */
 .fas2 {
-   padding-top: 0.8rem;
-   margin: 0 1rem 0 0;
+    padding-top: 0.8rem;
+    margin: 0 1rem 0 0;
     background-color:#DEEBFF ;
     width: 3rem;
     height: 2rem;
@@ -214,12 +214,15 @@ input:focus {
     font-size: 0.9rem;
 }
 .fas500logements {
-    border-radius: 50px;
     text-align: center;   
     font-size: 0.7rem;
     width: 21px;
     height: 17px;
     padding-top: 4px;
+}
+.borderFas500logements {
+  border: #52575f solid 1px;
+  border-radius: 50px;
 }
 
 /******************************MAIN CONTAINER *********************/
@@ -239,7 +242,7 @@ input:focus {
     border-radius: 20px 20px 0 0;
 }
 /*********************************reglages associés***********************/
-.fas,.fas2, .etoile, .etoilePopulaire,.nav_pHebergementInscrire, .fas500logements,.nav_pHebergementInscrire p {
+.fas,.fas2, .etoile, .etoilePopulaire,.nav_pHebergementInscrire, .nav_pHebergementInscrire p {
     color: #0065fc ;
 } 
 
@@ -295,6 +298,8 @@ main {
     object-fit: cover; 
     height:7.3rem;
     width: 17vw;
+    min-width: 140px;
+    max-width: 235px;
     border:2px solid white;
     margin: 3px;
     border-radius: 20px 0 0 20px;
@@ -378,7 +383,6 @@ main {
 
 /************container text and star*********/
 .containerText {
-    display: bloc;
     flex-direction: column; 
     width: 40%;
     height: 130px;
@@ -398,7 +402,7 @@ main {
 .etoilePopulaire {
     display: flex;
     margin-top: 4vh;
-    font-size: 0.7;
+    font-size: 0.7rem;
 }
 
 /*************ACTIVITE A MARSEILLE*******/
@@ -518,6 +522,7 @@ footer p {
 footer p:hover {
     font-weight:700;
 }
+
 /************************media query********************/
 
 @media screen and (max-width:600px) {
