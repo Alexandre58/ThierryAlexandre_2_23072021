@@ -1,5 +1,19 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;500&display=swap');*/
 
+
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0; 
+    
+    
+}
+.container {
+    max-width: 1440px;
+    margin:0 auto;
+    max-height: 1900px;
+}
 /*color site*/
 .container_SixArticlesEtH2,
 .div_troisArticles,
@@ -23,18 +37,6 @@ h5 {
 .fas,.fas2, .etoile, .etoilePopulaire {
     color: #0065fc ;
 } 
-
-body {
-    font-family: 'Raleway', sans-serif;
-    margin: 0;
-    padding: 0; 
-    
-    
-}
-.container {
-    max-width: 1440px;
-    margin:0 auto;
-}
 header {
     width: 92%;
     margin: 0 auto;
@@ -56,14 +58,24 @@ header {
     column-gap: 35%;
 }
 /*effet sur lien en tete*/
-a {
+.nav_pHebergementHeber p a {  
+    text-decoration: none;
     color: blue;
 }
-a:visited {
-    text-decoration: none;
+.nav_pHebergementHeber p a:visited {
     color: black;
 }
+.nav_pHebergementHeberActivite p a {
+    text-decoration: none;
+    color: blue;
+}
+.nav_pHebergementHeberActivite p a {
+    color: black;
 
+}
+a {
+    text-decoration: none;
+}
 /*Navigation hebergement activite*/
 .nav_pHebergementHeber:hover {
     border-top:3px solid #0065FC;
@@ -594,6 +606,9 @@ footer p:hover {
  
 }
 @media screen and (max-width:950px) {
+    header {
+        margin-bottom: 230px;
+    }
     .div_troisArticles {
         margin-top: 50px;
         padding-bottom: 50px;
