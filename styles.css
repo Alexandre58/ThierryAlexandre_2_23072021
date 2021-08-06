@@ -1,22 +1,18 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;500&display=swap');*/
-
-
-
 body {
     font-family: 'Raleway', sans-serif;
     margin: 0;
-    padding: 0; 
-    
-    
+    padding: 0;   
 }
 .container {
     max-width: 1440px;
     margin:0 auto;
 }
+* {
+    box-sizing: border-box;
+}
 /*color site*/
-.container_SixArticlesEtH2,
+.container_sixArticlesEtH2,
 .div_troisArticles,
-.div_populaire_trois,
 .rechercher
 .envoyer
 footer {
@@ -33,7 +29,7 @@ h5 {
     font-weight: bold;
 }
 /*********************************reglages associés***********************/
-.fas,.fas2, .etoile, .etoilePopulaire {
+.fas,.fas2 {
     color: #0065fc ;
 } 
 header {
@@ -43,7 +39,7 @@ header {
 /*****container header premiere partie****/
 .header_h1 {
     display: flex;
-    justify-content: space-between;
+    
 }
 /*dimension logo*/
 .header_img img {
@@ -53,10 +49,11 @@ header {
 .header_nav{
     display: flex; 
     justify-content: flex-end;
-    margin-left: 55%;
+  /*  margin-left: 55%;*/
     column-gap: 35%;
 }
 /*effet sur lien en tete*/
+/*A METTRE DANS LES MEDIA QUERY
 .nav_pHebergementHeber p a {  
     text-decoration: none;
     color: blue;
@@ -68,10 +65,12 @@ header {
     text-decoration: none;
     color: blue;
 }
-.nav_pHebergementHeberActivite p a {
+.nav_pHebergementHeberActivite p a :visited {
     color: black;
 
 }
+*/
+/*pour les autres liens su site*/
 a {
     text-decoration: none;
 }
@@ -129,9 +128,9 @@ a {
     display: flex;
     flex-wrap: nowrap; 
     width: 30%;
-    height: 45px;
+  
     border-radius: 20px;
-    margin-top: 20px;
+  /*  margin-top: 20px;*/
 }
 .trouverHebergement_font-awesome {
     background-color: #DEEBFF;
@@ -168,7 +167,6 @@ input:focus {
     color:white;
     width: 100%;
     max-width: 133px;
-    height: 45px;
     font-size: 1rem;
     text-align: center;  
     font-weight: bold;
@@ -180,8 +178,6 @@ input:focus {
 
 /***********partie recherche*************/
 .filtresContainerH2 {
-    padding-bottom: 5px;
-    margin-top: 13px;
     font-size: 1rem;
 }
 
@@ -190,7 +186,6 @@ input:focus {
     display: flex;
     flex-direction: column; 
     flex-wrap: wrap;
-    margin: 31px 0 31px 0;
 }
 .filtresContainerFlitres {
     display: flex;
@@ -200,15 +195,15 @@ input:focus {
 .filtresContainer {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 5%;
+    /*margin-left: 5%;*/
 }
 /*********container logo eco fam rom anim*****/
 .filtresContainer_div {
     display: flex;
     align-items: center;
-    margin: 0 1rem 0.5rem 0;
-    padding-right: 1rem;
-    height: 47px;
+    /*margin: 0 1rem 0.5rem 0;*/
+  /*  padding-right: 1rem;*/
+
     border: 1px solid #DEEBFF;
     border-radius:50px ;
    
@@ -218,19 +213,19 @@ input:focus {
 }
 /*Filtres */
 .fas2 {
-    padding-top: 0.8rem;
-    margin: 0 1rem 0 0;
+  /*  padding-top: 0.8rem;*/
+  /*  margin: 0 1rem 0 0;*/
     background-color:#DEEBFF ;
     width: 3rem;
-    height: 2rem;
+    
     border-radius: 50px;
-    text-align: center;   
+
 }
 
 /****container plus de 50 logements****/
 .filtresConainertsIcone{
     display: flex;
-    margin: 30px 0 10px -1vw;
+  /*  margin: 30px 0 10px -1vw;*/
     color: black;
     width: 55%;
 }
@@ -238,14 +233,14 @@ input:focus {
     color: black;
     font-weight: normal;
     font-size: 0.9rem;
-    margin-left: 2%;
+  /*  margin-left: 2%;*/
 }
 .fas500logements {
     text-align: center;   
     font-size: 0.7rem;
     width: 21px;
-    height: 17px;
-    padding-top: 4px;
+
+   /* padding-top: 4px;*/
 }
 .borderFas500logements {
   border: #f2f2f2 solid 1px;
@@ -256,9 +251,9 @@ input:focus {
 /*****************main container**********/
 
 /*ci-dessous border radius des elements*/
-.container_SixArticlesEtH2,
+.container_sixArticlesEtH2,
 .div_troisArticles,.articleHebergements a ,
-.div_populaire_trois,.articleVerticale,.divHorizontale,
+.articleVerticale,.divHorizontale,
 .deuxArticlesHorizontales  {
     border-radius: 20px;
 }/*********************************reglages associés***********************/
@@ -272,27 +267,29 @@ input:focus {
 .starWhite{
     opacity: 0.3;
 }
-/************HEBERGEMENT Marseille****************/
 main {
     display: flex;
     flex-direction: column;
     margin: auto; 
-    padding: 0;
+    
     width: 93%;
 }
-.des-deuxSectionsPricipales {
+/************HEBERGEMENT Marseille****************/
+
+.sectionHeberEtPopulaire {
     display: flex;
     column-gap: 3%;
     height: auto;
+    border: #0065FC solid 1px;
     
 }
 /*dimension du bloc hebergement Marseille**********/
 /*DEBUT HEBERGEMENT*/
-.container_SixArticlesEtH2 {
+.container_sixArticlesEtH2 {
     display: flex;   
     flex-direction: column;
-    row-gap: 18px;
-    padding: 25px;
+    row-gap: 0px;
+    border: #9bfc00 solid 1px ;
 }
 .containerDesSixArticles {
     display: flex; 
@@ -311,51 +308,48 @@ main {
    flex-direction: column;
    background-color: white;
    width: auto;
-   height:13rem;
+
    border-radius: 20px 20px;
    box-sizing: border-box;
 }
 .articleHebergements img{
     object-fit: cover; 
-    height:7.3rem;
+   
     width: 17vw;
-    min-width: 10px;
-    max-width: 235px;
+ 
     border:2px solid white;
-    margin: 3px;
     border-radius: 20px 0 0 20px;
  }
  /********************Container text***************/
  .containerTextHebergement {
     display: flex;
     flex-direction: column;
-    align-content: space-between;
-    margin-left: 1vw; 
+  
     width:80%;
-    height:90px;
-    margin-top: -1vh;
+  
+   
 }
 .containerTextHebergement h3 {
     font-size: 0.8rem;
-    color:black;
+
    
 }
 .containerTextHebergement p {
     font-size: 0.8rem;
     font-weight: bold;
-    color:black;
-    margin-top: -10px;
+ 
+  
     font-weight: normal;
     
  }
  .etoile {
-    display:flex;
+
     list-style: none;
     font-size: 0.7rem;
     column-gap: 2px;
     width: 87px;
-    margin: -5px 0 0 -39px;
-}
+
+}    
 .pHoverSixAticle :hover {
     font-size: 1.1rem; 
 }
@@ -364,14 +358,14 @@ main {
 .div_troisArticles {
     display: flex;
     flex-direction: column;
-    flex: 1 1 532px;
+
     row-gap: 19px;  
-    padding: 0 1rem;
+    border: #9bfc00 solid 1px ;
+  
 }
 .divH2EtIconePopulaire {
     display: flex; 
-    justify-content: space-between;
-    margin-top: 30px;
+  
 }
 .h2Populaire {
     font-size: 1.3rem;
@@ -381,23 +375,14 @@ main {
     margin-top: 27px;
     color: black;   
 }
-.div_populaire_trois  {
-    display: flex;
-    background-color: white;
-    width: 100%;
-    height: 8.9rem;
-
-   
-}
 .articlesLesPlusPopulaires a {
     display: flex;
-    width: auto;
+    
 }
-.div_populaire_trois article a img{
+article a img{
     object-fit: cover; 
     width:9vw;
-    min-width: 90px;
-    height:8.2rem;
+  
     border-radius: 20px 0 0 20px;
     border: 5px solid white;
 }
@@ -406,22 +391,21 @@ main {
 .containerText {
     flex-direction: column; 
     width: 45%;
-    height: 130px;
-    margin-left: 3px;
+
 }
 .containerText h3 {
     font-size: 13px;
 }
 .containerText p {
-    margin-top: 0;
+ 
     font-size: 0.8rem;
     font-weight: normal; 
     color:black;
-    margin-bottom: 5vh;
+   
 }
 .etoilePopulaire {
     display: flex;
-    margin-bottom: 0;
+   
 }
 .etoilePopulaire p i {
     font-size: 0.7rem;
@@ -431,9 +415,9 @@ main {
 .main_activite {
    display: flex;
    column-gap: 3%;
-   padding: 0;
+
    width: 100%;
-   margin: 50px 0;
+   
 }
 .div_container_deuxBlosDeTroisArticlesDuo {
     margin-top:60px;
@@ -446,7 +430,6 @@ main {
 .div_container_deuxBlosDeTroisArticlesDuo {
     display: flex;
     flex-direction: column; 
-    padding: 0;
 }
 /************Container trois blocs*************/
 .containerDeuxDivDeTroisArticles {
@@ -457,43 +440,11 @@ main {
     
 }
 /****reglage image vieux port et calanques********/
-.divVerticale {
-    width: 50%;
-}
+
 .articleVerticale article img{
     object-fit: cover;
     width: 100%;
-    height: 386px;
-}
-.vieuxPort, .calanques {
-    height: 446px;
-}
-.fortDePomegue {
-    height: 235px;
-    margin-bottom: 44px;
- }
- .fortDePomegue article div img {
-     height: 181px;
- }
- .ilesDuFrioul {
-    height: 164px;
-}
-.ilesDuFrioul article div img {
-    height: 108px;
-}
-.notreDame {
-    height: 194px;
-    margin-bottom: 45px;
-
-}
-.notreDame article div img {
-    height: 138px;
-}
-.parc {
-    height: 208px;   
-}
-.parc article div img {
-    height: 153px;
+  
 }
 
 /***********horizontal*********/
@@ -509,8 +460,8 @@ main {
 /*text activite a marseille*/
 .textActivite {
     font-size: 1rem;
-    padding-left: 1rem;
-    margin-top: -0.6rem;
+ 
+   
     color: black; 
 }
 .articleVerticale,.deuxArticlesHorizontales {
@@ -543,13 +494,12 @@ footer p {
 footer p:hover {
     font-weight:700;
 }
-
+/*1300*/
 /************************media query********************/
+/*
 @media screen and (max-width:1300px) {
-    header {
-        margin-bottom: 150px;
-    }
-    .container_SixArticlesEtH2 {
+ 
+    .container_sixArticlesEtH2 {
         border-radius: 0 0 20px 20px;
         margin-bottom: 0;
 }
@@ -563,10 +513,11 @@ footer p:hover {
     .articleHebergements a {
         margin:15px;
     }
+    */
     /*populaire*/
-    .des-deuxSectionsPricipales {
+    /*
+    .sectionHeberEtPopulaire {
         flex-direction: column-reverse; 
-        height: 150vh;  
     }
     .div_populaire_trois article a img{
         width:80%;
@@ -592,6 +543,7 @@ footer p:hover {
         font-size: 0.7rem;
     }
     /*Hebergement*/
+    /*
     .articleHebergements a{
         width:23vw;
         height:16rem;
@@ -604,6 +556,8 @@ footer p:hover {
       }
  
 }
+*/
+/******************************************************
 @media screen and (max-width:950px) {
     header {
         margin-bottom: 230px;
@@ -611,8 +565,9 @@ footer p:hover {
     .div_troisArticles {
         margin-top: 50px;
         padding-bottom: 50px;
-    }
+    }****************************************************/
     /*Hebergement*/
+    /*************************************************
     .articleHebergements a{
         width: auto;
         height:18rem;
@@ -621,15 +576,16 @@ footer p:hover {
             width: 55vw;
             max-width:23vw;
 
-        }
+        }*/
                 /*populaire*/
+                /****************************************
         .div_populaire_trois article a img{
             width:50%;
             min-width: 190px;
         }
-
-
 }
+****************************************************************/
+/*
 @media screen and (max-width:750px) {
      main {
          width: 100%;
@@ -665,8 +621,9 @@ footer p:hover {
        
        
      }
-    
+    */
     /*hebergement et activite en header*/
+    /*
     .nav_pHebergementInscrire {
         position: absolute; 
        margin-left: 150vw;
@@ -711,7 +668,9 @@ footer p:hover {
         text-align: center;
         width: 45vw; 
     }
+    */
     /*Filtres*/
+    /*
     .filtresContainerFlitres {
         display: flex;
         flex-direction: column;
@@ -729,8 +688,10 @@ footer p:hover {
     .filtresConainertsIcone {
         width: 100%;
     }
+    */
     /*LES PLUS POPULAIRES*/
-    .div_troisArticles, .container_SixArticlesEtH2{
+    /*
+    .div_troisArticles, .container_sixArticlesEtH2{
         border-radius: 0;
     }
     .div_populaire_trois  {
@@ -762,17 +723,19 @@ footer p:hover {
     }
     .etoilePopulaire p i {
         font-size: 0.6rem;
-    }
+    }*/
     /*HEBERGEMENT A MARSEILLE*/
-    .container_SixArticlesEtH2 {
+    /*
+    .container_sixArticlesEtH2 {
         margin-bottom: -50px;
         background-color: white;
         padding: 0px;
         margin-left: 2vw;
         
     }
-   
+   */
     /***************************************/
+    /*
     .articleHebergements a{
         width:88vw;
         min-width: 10px;
@@ -784,15 +747,15 @@ footer p:hover {
         max-width:none;
         min-width: 10px;
     }
- 
+ */
           /*ACTIVITE*/
-
+/*
     .main_activite {
         flex-direction: column;
          column-gap: 2.5vw;
          width: 92%;
       }
-      /*ACTIVITE*/
+ 
       .containerDeuxDivDeTroisArticles {
         flex-wrap: wrap;
         flex-direction:column;
@@ -844,19 +807,25 @@ footer p:hover {
 
     }
 }
+*/
+/*
 @media screen and (max-width:750px) {
     .envoyer {
         display: none;
     }
 
 }
+*/
+/*
 @media screen and (min-width:750px) {
-        /*bouton*/
+
         #btnRechercher {
             display:none;             
         }
        
 } 
+*/
+/*
 @media screen and (max-width:375px) {
     header {
         margin-bottom: 1430px;
@@ -907,3 +876,5 @@ footer p:hover {
         font-size: 0.6rem;
     }
     }
+    
+*/
