@@ -251,6 +251,7 @@ input:focus {
 /*****************main container**********/
 
 /*ci-dessous border radius des elements*/
+.articlesLesPlusPopulaires,
 .container_sixArticlesEtH2,
 .div_troisArticles,.articleHebergements a ,
 .articleVerticale,.divHorizontale,
@@ -274,49 +275,57 @@ main {
     
     width: 93%;
 }
-/************HEBERGEMENT Marseille****************/
-
+/************HEBERGEMENT ET LES PLUS POPULAIRE****************/
+/*etoiles communes AUX articles */
+.etoilePopulaire {
+    display: flex;
+   
+}
+.etoilePopulaire p i {
+    font-size: 0.7rem;
+}
+/*SECTION CONTAINER HEBERGEMENT ET LES PLUS POPULAIRE*/
 .sectionHeberEtPopulaire {
     display: flex;
     column-gap: 3%;
-    height: auto;
-    border: #0065FC solid 1px;
     
 }
-/*dimension du bloc hebergement Marseille**********/
-/*DEBUT HEBERGEMENT*/
+/*CONTAINER DES SIX ARTICLES "avec h2 et afficher plus" hebergement Marseille**********/
+
 .container_sixArticlesEtH2 {
     display: flex;   
-    flex-direction: column;
-    row-gap: 0px;
-    border: #9bfc00 solid 1px ;
+    flex-direction:column;
+    width: 65%;
+    row-gap: 1rem;
 }
+/*CONTAINER DES SIX ARTICLES HEBERGEMENT*/
 .containerDesSixArticles {
     display: flex; 
     flex-wrap: wrap;
-     justify-content: space-between;
-    row-gap: 19px;
+     justify-content: space-around;
+     row-gap: 2rem;
+   
+    width: 100%;
+    height: 100%;
+   
 }
-.h2Activite{
-    font-size: 1.3rem;
- 
-}
-/*container 3 articles hebergement Marseille*************/
-/**********container article***************/
-.articleHebergements a{
+
+
+/**********ARTICLES des hebergements***************/
+
+.articleHebergements {
    display: flex;
    flex-direction: column;
    background-color: white;
-   width: auto;
-
+   width:15rem;
+   height: 12rem;
    border-radius: 20px 20px;
    box-sizing: border-box;
 }
 .articleHebergements img{
     object-fit: cover; 
-   
-    width: 17vw;
- 
+    width: 100%;
+   height: 117px;
     border:2px solid white;
     border-radius: 20px 0 0 20px;
  }
@@ -324,32 +333,15 @@ main {
  .containerTextHebergement {
     display: flex;
     flex-direction: column;
-  
-    width:80%;
-  
-   
+    
 }
 .containerTextHebergement h3 {
     font-size: 0.8rem;
-
-   
 }
 .containerTextHebergement p {
     font-size: 0.8rem;
-    font-weight: bold;
- 
-  
-    font-weight: normal;
-    
+    font-weight: normal; 
  }
- .etoile {
-
-    list-style: none;
-    font-size: 0.7rem;
-    column-gap: 2px;
-    width: 87px;
-
-}    
 .pHoverSixAticle :hover {
     font-size: 1.1rem; 
 }
@@ -358,31 +350,52 @@ main {
 .div_troisArticles {
     display: flex;
     flex-direction: column;
-
-    row-gap: 19px;  
-    border: #9bfc00 solid 1px ;
+    justify-content: space-around;
+    align-items: center;
   
+    width: 35%; 
+
+ 
+   
 }
+.containerDesTroisArticles {
+    display: flex;
+    flex-direction: column;
+    border: #0065FC solid 1px;
+    justify-content: space-between;
+    width:80%;
+    height: 85%;
+   
+}
+/******div container h2 et de l'icone********/
 .divH2EtIconePopulaire {
     display: flex; 
-  
+    border: #0065FC solid 1px;
+    width: 100%;
 }
+/*H2 POLPULAIRE ET ICONE */
 .h2Populaire {
     font-size: 1.3rem;
-    
+    margin: auto;  
 }
 .divH2EtIconePopulaire i{
-    margin-top: 27px;
-    color: black;   
+    color: black;
+    margin: auto;   
 }
-.articlesLesPlusPopulaires a {
-    display: flex;
-    
+/***************************ARTICLES LES PLUS POLPULAIRES***************/
+
+.articlesLesPlusPopulaires {
+    display: flex; 
+    background-color: white;
+   
+   
+    height: 9rem;
+
 }
-article a img{
+.articlesLesPlusPopulaires img{
     object-fit: cover; 
-    width:9vw;
-  
+    width: 8.6rem;
+    height: 100%;
     border-radius: 20px 0 0 20px;
     border: 5px solid white;
 }
@@ -390,26 +403,19 @@ article a img{
 /************container text and star*********/
 .containerText {
     flex-direction: column; 
-    width: 45%;
-
+    justify-content: center;
+    width: 35%;
 }
 .containerText h3 {
-    font-size: 13px;
+    font-size: 0.8rem;
 }
 .containerText p {
- 
     font-size: 0.8rem;
     font-weight: normal; 
     color:black;
    
 }
-.etoilePopulaire {
-    display: flex;
-   
-}
-.etoilePopulaire p i {
-    font-size: 0.7rem;
-}
+
 /*************ACTIVITE A MARSEILLE*******/
 /********************Container activité Marseille***************/
 .main_activite {
@@ -423,8 +429,10 @@ article a img{
     margin-top:60px;
   }
 /****************container de deux blocs activité Marseille*********/
-.h2ActiviteMarseille {
+
+.h2Activite{
     font-size: 1.3rem;
+ 
 }
 .div_container_deuxBlosDeTroisArticles,
 .div_container_deuxBlosDeTroisArticlesDuo {
