@@ -10,6 +10,9 @@ body {
 * {
     box-sizing: border-box;
 }
+a {
+    text-decoration: none;
+}
 /*color site*/
 .container_sixArticlesEtH2,
 .div_troisArticles,
@@ -27,6 +30,7 @@ h3,
 h4,
 h5 {
     font-weight: bold;
+    color: black;
 }
 /*********************************reglages associés***********************/
 .fas,.fas2 {
@@ -35,45 +39,35 @@ h5 {
 header {
     width: 92%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 /*****container header premiere partie****/
 .header_h1 {
     display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    border: #0065FC solid 1px;
+
     
 }
 /*dimension logo*/
 .header_img img {
+    
+    border: #0065FC solid px;
     width: 6rem;
 }
 /*******header nav******/
 .header_nav{
     display: flex; 
-    justify-content: flex-end;
-  /*  margin-left: 55%;*/
-    column-gap: 35%;
-}
-/*effet sur lien en tete*/
-/*A METTRE DANS LES MEDIA QUERY
-.nav_pHebergementHeber p a {  
-    text-decoration: none;
-    color: blue;
-}
-.nav_pHebergementHeber p a:visited {
-    color: black;
-}
-.nav_pHebergementHeberActivite p a {
-    text-decoration: none;
-    color: blue;
-}
-.nav_pHebergementHeberActivite p a :visited {
-    color: black;
+    justify-content: space-between;
+    width: 20%;
+    border: #0065FC solid 1px;
 
 }
-*/
-/*pour les autres liens su site*/
-a {
-    text-decoration: none;
-}
+
+
 /*Navigation hebergement activite*/
 .nav_pHebergementHeber:hover {
     border-top:3px solid #0065FC;
@@ -175,57 +169,62 @@ input:focus {
 .envoyer:hover {
     background-color: #4789ec; 
 }
-
-/***********partie recherche*************/
-.filtresContainerH2 {
-    font-size: 1rem;
+#btnRechercher {
+    display:none;             
 }
 
-/********container filtres********/
+/***********partie FILTRES*************/
 .filtresContainer_container {
     display: flex;
     flex-direction: column; 
     flex-wrap: wrap;
+    width: 60%;
+
 }
-.filtresContainerFlitres {
+.filtresContainerFiltres {
     display: flex;
-    width: 90%;
+    column-gap:2%;
+    width: 100%;
 }
-/*********container eco familial romantiqueanim*****/
-.filtresContainer {
+.filtresContainerH2 {
+    font-size: 1rem;
+    margin: auto;
+    
+
+}
+.filtreContainerQuatresItems {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    /*margin-left: 5%;*/
+    width: 90%;
 }
 /*********container logo eco fam rom anim*****/
 .filtresContainer_div {
     display: flex;
-    align-items: center;
-    /*margin: 0 1rem 0.5rem 0;*/
-  /*  padding-right: 1rem;*/
-
     border: 1px solid #DEEBFF;
-    border-radius:50px ;
-   
+    border-radius:50px;
+}
+.filtresContainer_div p {
+    margin: auto 0.5rem;
+}
+
+.filtresContainer_div:hover {
+    box-shadow: 2px -7px 28px 7px rgba(182, 171, 171, 0.91) inset;
 }
 .filtresContainer_div:hover {
     box-shadow: 2px -7px 28px 7px rgba(182, 171, 171, 0.91) inset;
 }
 /*Filtres */
 .fas2 {
-  /*  padding-top: 0.8rem;*/
-  /*  margin: 0 1rem 0 0;*/
+    margin-left: 0;
+    padding: 0.8rem;
     background-color:#DEEBFF ;
-    width: 3rem;
-    
     border-radius: 50px;
-
 }
 
 /****container plus de 50 logements****/
 .filtresConainertsIcone{
     display: flex;
-  /*  margin: 30px 0 10px -1vw;*/
     color: black;
     width: 55%;
 }
@@ -245,6 +244,21 @@ input:focus {
 .borderFas500logements {
   border: #f2f2f2 solid 1px;
   border-radius: 50px;
+}
+@media screen and (max-width:750px) {
+    effet sur lien en tete
+A METTRE DANS LES MEDIA QUERY
+.nav_pHebergementHeber p a {  
+ 
+    color: blue;
+}
+.nav_pHebergementHeber p a:visited {
+    color: black;
+}
+
+.nav_pHebergementHeberActivite p a :visited {
+    color: black;
+}
 }
 
 /******************************MAIN CONTAINER *********************/
@@ -290,13 +304,24 @@ main {
     column-gap: 3%;
     
 }
+/*H2*/
+.heberH2 {
+    width:90%;
+   
+}
+.h2Hebergement {
+    font-size: 1.4rem;
+}
 /*CONTAINER DES SIX ARTICLES "avec h2 et afficher plus" hebergement Marseille**********/
 
 .container_sixArticlesEtH2 {
     display: flex;   
     flex-direction:column;
+    align-items: center;
+    justify-content: space-between;
     width: 65%;
-    row-gap: 1rem;
+    border: #0065FC solid 1px;
+
 }
 /*CONTAINER DES SIX ARTICLES HEBERGEMENT*/
 .containerDesSixArticles {
@@ -304,10 +329,9 @@ main {
     flex-wrap: wrap;
      justify-content: space-around;
      row-gap: 2rem;
-   
-    width: 100%;
-    height: 100%;
-   
+     border: #36832f solid 1px
+    width: 95%;
+    height: 85%;
 }
 
 
@@ -317,28 +341,33 @@ main {
    display: flex;
    flex-direction: column;
    background-color: white;
+  
    width:15rem;
-   height: 12rem;
+   height: 12.5rem;
+   align-content: center;
    border-radius: 20px 20px;
    box-sizing: border-box;
 }
 .articleHebergements img{
     object-fit: cover; 
     width: 100%;
-   height: 117px;
+     height: 7rem;
     border:2px solid white;
     border-radius: 20px 0 0 20px;
  }
  /********************Container text***************/
  .containerTextHebergement {
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;  
+    border: #070f07 solid 1px;
+    width: 80%;  
 }
 .containerTextHebergement h3 {
+    border: #36832f solid 1px;
     font-size: 0.8rem;
 }
 .containerTextHebergement p {
+    border: #36832f solid 1px;
     font-size: 0.8rem;
     font-weight: normal; 
  }
@@ -375,7 +404,7 @@ main {
 }
 /*H2 POLPULAIRE ET ICONE */
 .h2Populaire {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     margin: auto;  
 }
 .divH2EtIconePopulaire i{
@@ -679,7 +708,7 @@ footer p:hover {
     */
     /*Filtres*/
     /*
-    .filtresContainerFlitres {
+    .filtresContainerFiltres {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
