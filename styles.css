@@ -24,7 +24,7 @@ footer {
 .euros {
     font-weight: bold;
 }
-p,
+
 h2,
 h3,
 h4,
@@ -147,7 +147,7 @@ input:focus {
     border-radius:0 15px 15px 0;
     background-color: #0065FC;
     color:white;
-    width: 100%;
+    width: 8.4rem;
     max-width: 133px;
     font-size: 1rem;
     text-align: center;  
@@ -222,7 +222,7 @@ input:focus {
     color: black;
     font-weight: normal;
     font-size: 0.9rem;
-  /*  margin-left: 2%;*/
+  
 }
 .fas500logements {
     text-align: center;   
@@ -272,9 +272,31 @@ input:focus {
         /**************************lien s'incrire*/
         .nav_pHebergementInscrire {
             position: absolute;
-            margin-left:80%;
+            margin-left:72%;
         }
-}
+
+        }
+        /*bouton de recherche*/
+        @media screen and (max-width:380px) {
+            .envoyer {
+                display: none;
+            }
+            #btnRechercher {
+                position: absolute;
+                display: block;
+                background-color: #0065FC;
+                border-radius: 15px;
+                border: none;
+                margin-left: 15rem;
+                
+            }
+            .envoyerMobile {
+                color: #F2F2F2;
+                margin: 0.8rem 0.6rem;
+            }
+        }   
+
+
 
 /******************************MAIN CONTAINER *********************/
 /*****************main container**********/
@@ -380,8 +402,9 @@ main {
     font-weight: normal; 
     margin: 0.5rem 0 0.5rem 0;
  }
-.pHoverSixAticle :hover {
-   color: blanchedalmond; 
+.pHoverSixAticle p a{
+   color: black;
+   font-weight: bold;
 }
 /********************* LES PLUS POPULAIRES****************/
 /***********Container pour les trois articles les plus populaire**********/
@@ -555,10 +578,8 @@ main {
         background-color: white;
     }
     .articleHebergements {
-        box-shadow: 1px 0px 7px -2px rgba(0,0,0,0.65);
-    }
-    .articleHebergements {
        width:100%;
+       box-shadow: 1px 0px 7px -2px rgba(0,0,0,0.65);
     }
     .articleHebergements img{
         width: 100%;
@@ -577,9 +598,56 @@ main {
         margin: auto;
     }
     .divH2Activite {
-        width: 93%;
+        width: 90%;
         margin: auto;
     }
+    .div_container_deuxBlosDeTroisArticles{
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+    .articleVerticale {
+        width: 100%;
+    }
+    .divHorizontale {
+        width: 100%;
+    }
+    .ilesDuFrioul a img{
+        height: 14.7rem;
+    }
+}
+@media screen and (max-width:380px) {
+    /*les plus populaires*/
+    .articlesLesPlusPopulaires {
+        height: 8.8rem;
+    }
+    .containerDesTroisArticles {
+        width: 90%;
+    }
+    .articlesLesPlusPopulaires img{
+        width: 8.1rem;
+    }
+    /*hebergement a maseille*/
+    .articleHebergements img{
+        width: 100%;
+        height:8.3rem;
+     }
+     /*activite*/
+     .articleVerticale {
+        height: 12rem;
+    }
+     .articleVerticale article a img{
+        height: 8.3rem;
+    }
+     .ilesDuFrioul a img{
+        height: 8.3rem;
+    }
+    .fortDePomegue a img {
+        height: 8.3rem;
+    }
+    .parc a img{
+        height:8.3rem;
+    }
+
 }
 /******************FOOTER*******************/
 footer {
