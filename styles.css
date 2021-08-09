@@ -228,8 +228,9 @@ input:focus {
 }
 
 /****container plus de 50 logements****/
-.filtresConainertsIcone{
+.filtresConainertsIcone {
     display: flex;
+    column-gap: 1.5rem;
     color: black;
     width: 80%;
 }
@@ -287,12 +288,18 @@ input:focus {
         /**************************lien s'incrire*/
         .nav_pHebergementInscrire {
             position: absolute;
-            margin-left:72%;
+            margin-left:85%;
+        }
+        .filtresContainerFiltres{
+            flex-direction: column;
         }
 
         }
         /*bouton de recherche*/
         @media screen and (max-width:380px) {
+            .nav_pHebergementInscrire {
+                margin-left:80%;
+            }
             .envoyer {
                 display: none;
             }
@@ -317,7 +324,7 @@ input:focus {
 /*****************main container**********/
 
 /*ci-dessous border radius des elements*/
-.articlesLesPlusPopulaires,
+.articlesLesPlusPopulaires a,
 .container_sixArticlesEtH2,
 .div_troisArticles,.articleHebergements a ,
 .articleVerticale,.divHorizontale,
@@ -347,14 +354,10 @@ main {
 .etoilePopulaire p i {
     font-size: 0.7rem;
 }
-.div_troisArticles a :hover{
-    font-size: 0.9rem;
+.div_troisArticles :hover,.articleHebergements :hover{
+    box-shadow: 1px 0px 7px -2px rgba(0,0,0,0.65);
+    border-radius: 20px;
 }
-/*CODE A VOIR ??
-.container_sixArticlesEtH2 a :hover {
-    color: rgb(38, 32, 54);
-    font-weight: bolder;
-}*/
 /*SECTION CONTAINER HEBERGEMENT ET LES PLUS POPULAIRE*/
 .sectionHeberEtPopulaire {
     display: flex;
@@ -381,7 +384,7 @@ main {
     display: flex; 
     flex-wrap: wrap;
     justify-content: space-around;
-    row-gap: 2rem;
+    row-gap: 3rem;
     width: 95%;
     height: 85%;
 }
@@ -416,10 +419,14 @@ main {
     font-size: 0.8rem;
     font-weight: normal; 
     margin: 0.5rem 0 0.5rem 0;
+    color: black;
  }
 .pHoverSixAticle p a{
    color: black;
    font-weight: bold;
+}
+.pHoverSixAticle {
+    margin: 2rem;
 }
 /********************* LES PLUS POPULAIRES****************/
 /***********Container pour les trois articles les plus populaire**********/
@@ -442,7 +449,7 @@ main {
 .divH2EtIconePopulaire {
     display: flex; 
     justify-content: space-between;
-    margin-top: 1rem;
+    margin: 1rem auto;
     width: 80%;   
 }
 /*H2 POLPULAIRE ET ICONE */
@@ -455,15 +462,14 @@ main {
     margin: auto 0;    
 }
 /***************************ARTICLES LES PLUS POLPULAIRES***************/
-
-.articlesLesPlusPopulaires {
+.articlesLesPlusPopulaires a {
     display: flex; 
     background-color: white;
     width: 100%;
     height: 9rem;
 }
 
-.articlesLesPlusPopulaires img{
+.articlesLesPlusPopulaires a img{
     object-fit: cover; 
     width: 8.6rem;
     height: 100%;
@@ -516,7 +522,11 @@ main {
 /********verticale vieux et Calanques*************/
 .articleVerticale {
     width: 50%;
-    height: 28rem;
+    height: 27rem;
+}
+.articleVerticale :hover,.divHorizontale :hover {
+    box-shadow: 1px 0px 7px -2px rgba(0,0,0,0.65);
+    border-radius: 20px;   
 }
 .articleVerticale article a img{
     object-fit: cover;
@@ -538,21 +548,21 @@ main {
 .textActivite {
     border: transparent 1px solid;
     margin: auto 1rem;
-    font-size: 1rem;
+    font-size: 0.7rem;
     color: black; 
 }
 /*********dimension differentes des images****************/
 .fortDePomegue a img {
-   height: 10.5rem;
+   height: 11.5rem;
  }
  .ilesDuFrioul a img{
-     height: 6.7rem;
+     height: 7rem;
  }
  .notreDame a img{
-     height: 8.4rem;
+     height: 8.8rem;
  }
 .parc a img{
-    height: 9rem;
+    height: 9.7rem;
 }
 .articleVerticale,.deuxArticlesHorizontales {
     box-shadow: 1px 0px 7px -2px rgba(0,0,0,0.65);
@@ -632,13 +642,13 @@ main {
 }
 @media screen and (max-width:380px) {
     /*les plus populaires*/
-    .articlesLesPlusPopulaires {
+    .articlesLesPlusPopulaires a {
         height: 8.8rem;
     }
     .containerDesTroisArticles {
         width: 90%;
     }
-    .articlesLesPlusPopulaires img{
+    .articlesLesPlusPopulaires a img{
         width: 8.1rem;
     }
     /*hebergement a maseille*/
