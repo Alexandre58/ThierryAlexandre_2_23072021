@@ -95,11 +95,11 @@ header {
     margin-top:40px;
 }
     /*Lien Visited*/
-/*    .nav_pHebergementHeber p a,
+    .nav_pHebergementHeber p a,
     .nav_pHebergementHeberActivite p a,
     .nav_pHebergementInscrire p a {  
         color: blue;
-    }*/
+    }
     .nav_pHebergementHeber p a,
     .nav_pHebergementHeberActivite p a,
     .nav_pHebergementInscrire p a:visited {
