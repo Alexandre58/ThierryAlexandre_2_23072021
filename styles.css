@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;   
 }
+/*introduction divers*/
 .container {
     max-width: 1440px;
     margin:0 auto;
@@ -12,6 +13,7 @@ body {
 }
 a {
     text-decoration: none;
+   
 }
 /*color site*/
 .container_sixArticlesEtH2,
@@ -32,10 +34,11 @@ h5 {
     font-weight: bold;
     color: black;
 }
-/*********************************reglages associés***********************/
+
 .fas,.fas2 {
     color: #0065fc ;
 } 
+/*HEADER *********************************************/
 header {
     position: relative;
     width: 92%;
@@ -63,34 +66,26 @@ header {
     width: 15rem;
 }
 /*Navigation hebergement activite*/
-.nav_pHebergementHeber:hover {
-    border-top:3px solid #0065FC;
-    width: 7rem;
-}
 
-.nav_pHebergementHeber p { 
+.nav_pHebergementHeber p,.nav_pHebergementHeberActivite p  { 
     margin-top:40px;
     text-align: center;
     width: 100%; 
     font-weight: normal;
 }
-
+.nav_pHebergementHeber:hover {
+    border-top:3px solid #0065FC;
+    width: 7rem;
+}
 .nav_pHebergementHeberActivite:hover {
     border-top:3px solid #0065FC;
     width:3.5rem;
 }
-.nav_pHebergementHeberActivite p {
-    margin-top:40px;
-    text-align: center;
-    width: 100%;  
-    font-weight: normal;
-}
+/***s'inscrire*****/
 .nav_pHebergementInscrire {
     position: absolute;
     width: 10%;
     margin-left:92%;
-    
-
 }
 .nav_pHebergementInscrire:hover {
     border-top:3px solid #0065FC;
@@ -99,13 +94,17 @@ header {
 .nav_pHebergementInscrire p {
     margin-top:40px;
 }
-/*visited*/
-.nav_pHebergementHeber p a:visited {
-    color: black;
-}
-.nav_pHebergementHeberActivite p a:visited {
-    color: black;
-}
+    /*Lien Visited*/
+/*    .nav_pHebergementHeber p a,
+    .nav_pHebergementHeberActivite p a,
+    .nav_pHebergementInscrire p a {  
+        color: blue;
+    }*/
+    .nav_pHebergementHeber p a,
+    .nav_pHebergementHeberActivite p a,
+    .nav_pHebergementInscrire p a:visited {
+        color: black ;
+    }
 /*FIN effet sur lien en tete*/
 /*******CONTAINER DEUXIEME PARTIE HEADER*********/
 .trouverHebergement h2{  
@@ -142,7 +141,7 @@ header {
     border:solid 1px #DEEBFF;
     }
 input:focus {
-    background-color:rgb(223, 205, 205) ;
+    background-color:rgba(135, 231, 17, 0.425) ;
     outline: none;   
 }
 .rechercher::placeholder {
@@ -233,6 +232,7 @@ input:focus {
     column-gap: 1.5rem;
     color: black;
     width: 80%;
+    padding-bottom: 2rem;
 }
 .filtresConainertsIcone p {
     color: black;
@@ -274,17 +274,7 @@ input:focus {
             margin-top:0px;
             text-align: center;
         }
-        /*Lien Visited*/
-        .nav_pHebergementHeber p a,
-        .nav_pHebergementHeberActivite p a,
-        .nav_pHebergementInscrire p a {  
-            color: blue;
-        }
-        .nav_pHebergementHeber p a,
-        .nav_pHebergementHeberActivite p a,
-        .nav_pHebergementInscrire p a :visited {
-            color: black;
-        }
+    
         /**************************lien s'incrire*/
         .nav_pHebergementInscrire {
             position: absolute;
@@ -309,17 +299,13 @@ input:focus {
                 background-color: #0065FC;
                 border-radius: 15px;
                 border: none;
-                margin-left: 15rem;
-                
+                margin-left: 15rem;    
             }
             .envoyerMobile {
                 color: #F2F2F2;
                 margin: 0.8rem 0.6rem;
             }
         }   
-
-
-
 /******************************MAIN CONTAINER *********************/
 /*****************main container**********/
 
@@ -491,8 +477,7 @@ main {
 .containerText p {
     font-size: 0.8rem;
     font-weight: normal; 
-    color:black;
-   
+    color:black;  
 }
 
 /*************ACTIVITE A MARSEILLE*******/
@@ -506,7 +491,6 @@ main {
     width: 100%;
 }
 /****************container de deux blocs activité Marseille*********/
-
 .h2Activite{
     font-size: 1.3rem;
 }
@@ -516,9 +500,7 @@ main {
     margin-bottom: 3.75rem;
     width: 100%
 }
-
 /****reglage image vieux port et calanques********/
-
 /********verticale vieux et Calanques*************/
 .articleVerticale {
     width: 50%;
@@ -672,7 +654,6 @@ main {
     .parc a img{
         height:8.3rem;
     }
-
 }
 /******************FOOTER*******************/
 footer {
@@ -709,8 +690,7 @@ footer p:hover {
 }
 /****************BREAKPOINTS FOOTER*************/
 @media screen and (max-width:750px) {
-    footer {
-        
+    footer { 
      flex-wrap: wrap;
      }
 }
