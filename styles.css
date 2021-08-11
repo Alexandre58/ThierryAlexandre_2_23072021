@@ -100,8 +100,12 @@ header {
     .nav_pHebergementInscrire p a {  
         color: blue;
     }
-    .nav_pHebergementHeber p a:visited,
-    .nav_pHebergementHeberActivite p a:visited,
+    .nav_pHebergementHeber p a:visited {
+        color: black ;
+    }
+    .nav_pHebergementHeberActivite p a:visited {
+        color: black ;
+    }
     .nav_pHebergementInscrire p a:visited {
         color: black ;
     }
