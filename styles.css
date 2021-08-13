@@ -11,9 +11,8 @@ body {
 * {
     box-sizing: border-box;
 }
-
 a {
-    text-decoration: none;  
+    text-decoration: none;
 }
 
 /*color site*/
@@ -79,7 +78,7 @@ header {
     width: 100%; 
     font-weight: normal;
 }
-.nav_pHebergementHeber:hover,.nav_pHebergementHeberActivite:hover {
+.nav_pHebergementHeber/*:hover*/,.nav_pHebergementHeberActivite:hover {
     border-top:3px solid #0065FC;
     width:100%;
 }
@@ -98,18 +97,17 @@ header {
     margin-top:40px;
 }
     /*Lien Visited*/
-    /* bleu des visited ?!?!*/
-  /*  .nav_pHebergementHeber p a,
-    .nav_pHebergementHeberActivite p a,
-    .nav_pHebergementInscrire p a {  
+    .lienEnHeader {
         color: blue;
-    }*/
+    }
+    /* bleu des visited ?!?!*/
   /*  .nav_pHebergementHeber p a:visited {
         color: black ;
-    }
+    }*/
     .nav_pHebergementHeberActivite p a:visited {
-        color: black ;
+        color: black;
     }
+    /*
     .nav_pHebergementInscrire p a:visited {
         color: black ;
     }*/
@@ -222,10 +220,9 @@ input:focus {
 }
 .filtresContainer_div:hover {
     box-shadow: 2px -7px 28px 7px rgba(182, 171, 171, 0.91) inset;
+    opacity: 0.5;
 }
-.filtresContainer_div:hover {
-    box-shadow: 2px -7px 28px 7px rgba(182, 171, 171, 0.91) inset;
-}
+
 /*Filtres */
 .fas2 {
     
@@ -282,6 +279,7 @@ input:focus {
         /**************************lien hebergement et Activité*/
         .nav_pHebergementHeber,.nav_pHebergementHeberActivite {
             width: 100%;
+            border-top: none;
         }
         .nav_pHebergementHeber:hover,.nav_pHebergementHeberActivite:hover  {
             border-top: none;
@@ -313,7 +311,7 @@ input:focus {
         /*bouton de recherche*/
         @media screen and (max-width:380px) {
             .nav_pHebergementInscrire {
-                margin-left:80%;
+                margin-left:70%;
             }
             .envoyer {
                 display: none;
@@ -477,7 +475,7 @@ main {
     display: flex; 
     background-color: white;
     flex-grow: 1;
-    height: 9rem;
+    height: 9.2rem;
 }
 
 .articlesLesPlusPopulaires a img{
@@ -575,7 +573,7 @@ main {
     box-shadow: 1px 0px 7px -2px rgba(0,0,0,0.65);
 }
 /*************************************BREAKPOINTS MAIN*********************/
-@media screen and (max-width:950px){
+@media screen and (max-width:980px){
     /*section container hebergement et populaire*/
     .sectionHeberEtPopulaire {
         flex-direction: column-reverse;
@@ -586,22 +584,27 @@ main {
         width: 100%;
     }
      /***********Container pour les trois articles les plus populaire**********/
+     .divH2EtIconePopulaire {
+        width: 90%;   
+    }
     .div_troisArticles {
-        width: 100%; 
+        width: 100%;
+        
     }
     .containerDesTroisArticles {
         flex-direction: row;
         width: 95%;
+        column-gap: 0.5rem;
     }
-    .articlesLesPlusPopulaires a {
+    .articlesLesPlusPopulaires {
        margin: auto;
-       width: clamp(10rem,100%,15rem);
+       width: clamp(13rem,100%,16rem);
        height: 9rem;
     }
-    .articlesLesPlusPopulaires a img{
-        width: clamp(5rem,40%,10rem);
-
+    .containerDesTroisArticles img{
+        width: clamp(2rem,40%,4rem);
     }
+  
     /*activite*/
     .main_activite {
       flex-direction: column;
@@ -627,22 +630,25 @@ main {
      }
     /*POPULAIRE*/
     .containerDesTroisArticles {
+       
         flex-direction: column;
-       row-gap: 2rem;
-       width: 90%;
+        row-gap: 2rem;
+         width: 90%;
     }
     .div_troisArticles {
         border-radius: 0;
     }
-    .articlesLesPlusPopulaires a {
-        width: clamp(10rem,90%,41rem);
+    .articlesLesPlusPopulaires {
+        width: clamp(10rem,100%,41rem);
      }
-     .articlesLesPlusPopulaires a img{
-        flex-grow: 1 ; 
-        width: clamp(2rem,40%,17rem); 
+     .containerDesTroisArticles a img{
+     
+        width: clamp(5rem,50%,20rem); 
     }
      .containerText {
-        width: 50%;
+        display: flex;
+        align-items: center;
+      
         margin: auto 6%;
     }
     /*ACTIVITE*/
@@ -679,6 +685,12 @@ main {
     }
     .div_container_deuxBlosDeTroisArticles article a img{
         height: 8rem;
+    }
+    .containerText {
+        
+        align-items:flex-start;
+        width: 50%;
+        margin: auto 6%;
     }
 }
 
