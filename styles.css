@@ -26,9 +26,10 @@ footer {
 .euros {
     font-weight: bold;
 }
-
-h2,
-h3,
+h3 {
+    font-size: 1rem;
+    margin:  0;
+}
 h4,
 h5 {
     font-weight: bold;
@@ -76,7 +77,19 @@ header {
     margin-top:40px;
     text-align: center;
     width: 100%; 
-    font-weight: normal;
+    font-weight: normal; 
+}
+.nav_pHebergementHeber p a,.nav_pHebergementHeberActivite p a:hover {
+    color: #0065FC !important;
+}
+.lienEnHeader {
+    color:  #0065FC;
+}
+.lienEnHeaderActivite {
+    color:black !important;
+}
+.lienEnHeaderActivite :visited {
+    color: #0065FC;
 }
 .nav_pHebergementHeber/*:hover*/,.nav_pHebergementHeberActivite:hover {
     border-top:3px solid #0065FC;
@@ -95,30 +108,11 @@ header {
 }
 .nav_pHebergementInscrire p {
     margin-top:40px;
+    font-weight: 900;
 }
-    /*Lien Visited*/
-    .lienEnHeader {
-        color: blue;
-    }
-    /* bleu des visited ?!?!*/
-  /*  .nav_pHebergementHeber p a:visited {
-        color: black ;
-    }*/
-    .nav_pHebergementHeberActivite p a:visited {
-        color: black;
-    }
-    /*
-    .nav_pHebergementInscrire p a:visited {
-        color: black ;
-    }*/
-/*FIN effet sur lien en tete*/
 /*******CONTAINER DEUXIEME PARTIE HEADER*********/
-.trouverHebergement h2{  
-    font-size: 1.3rem;
-}
 .trouverHebergement p {
-    font-size: 0.9rem;
-    
+    font-size: 0.9rem;   
 }
 /*container element de recherche*/
 .trouverUnHebergement_form {
@@ -214,13 +208,13 @@ input:focus {
     border-radius:50px;
     padding: 0;
 }
-.filtresContainer_div P {
+.filtresContainer_div p{
     margin: auto 1rem auto 0.7rem;
     font-weight: bold;
+    color: black;
 }
 .filtresContainer_div:hover {
     box-shadow: 2px -7px 28px 7px rgba(182, 171, 171, 0.91) inset;
-    opacity: 0.5;
 }
 
 /*Filtres */
@@ -307,28 +301,27 @@ input:focus {
         .filtresContainerFiltres{
             flex-direction: column;
         }
+        /*bouton rechercher*/
+        .nav_pHebergementInscrire {
+            margin-left:70%;
+        }
+        .envoyer {
+            display: none;
+        }
+        #btnRechercher {
+            position: absolute;
+            display: block;
+            background-color: #0065FC;
+            border-radius: 15px;
+            border: none;
+            margin-left: 15rem;    
+        }
+        .envoyerMobile {
+            color: #F2F2F2;
+            margin: 0.8rem 0.6rem;
+        }
  }
-        /*bouton de recherche*/
-        @media screen and (max-width:380px) {
-            .nav_pHebergementInscrire {
-                margin-left:70%;
-            }
-            .envoyer {
-                display: none;
-            }
-            #btnRechercher {
-                position: absolute;
-                display: block;
-                background-color: #0065FC;
-                border-radius: 15px;
-                border: none;
-                margin-left: 15rem;    
-            }
-            .envoyerMobile {
-                color: #F2F2F2;
-                margin: 0.8rem 0.6rem;
-            }
-        }   
+      
 /******************************MAIN CONTAINER *********************/
 /*****************main container**********/
 
@@ -343,7 +336,8 @@ input:focus {
 /*border radius des images*/
 .containerDesSixArticles article img,
 .articleVerticale img,
-.divHorizontale img {
+.divHorizontale img,
+.divHorizontalePomeguesFrioule article a img {
     border-radius: 20px 20px 0 0;
 }
 .starWhite{
@@ -373,9 +367,7 @@ main {
 .heberH2,.pHoverSixAticle{
     width:90%;
 }
-.h2Hebergement {
-    font-size: 1.4rem;
-}
+
 /*CONTAINER DES SIX ARTICLES "avec h2 et afficher plus" hebergement Marseille**********/
 
 .container_sixArticlesEtH2 {
@@ -392,7 +384,7 @@ main {
     justify-content: space-around;
     row-gap: 3rem;
     column-gap: 2rem;
-    width: 95%;
+    width: 90%;
     height: 85%;
 }
 /**********ARTICLES des hebergements***************/
@@ -420,10 +412,7 @@ main {
     padding-left: 1rem;  
     width: 100%;  
 }
-.containerTextHebergement h3 {
-    font-size: 1rem;
-    margin:0;
-}
+
 .containerTextHebergement p {
     font-size: 0.8rem;
     font-weight: normal; 
@@ -462,13 +451,12 @@ main {
     width: 80%;   
 }
 /*H2 POLPULAIRE ET ICONE */
-.h2Populaire {
-    font-size: 1.4rem;
-     margin: auto 0;
+.h2Populaire {  
+    margin: auto 0;
 }
 .divH2EtIconePopulaire i{
-    color: black;
-    margin: auto 0;    
+   color: black;
+   margin: auto 0;    
 }
 /***************************ARTICLES LES PLUS POLPULAIRES***************/
 .articlesLesPlusPopulaires a {
@@ -493,85 +481,74 @@ main {
     flex-grow: 1; 
     margin: auto;
 }
-.containerText h3 {
-    font-size: 1rem;
-    margin:  0;
-}
 .containerText p {
     font-size: 0.8rem;
     font-weight: normal; 
     color:black;  
 }
-
 /*************ACTIVITE A MARSEILLE*******/
 /********************Container activité Marseille***************/
-.main_activite {
-   display: flex;
-   column-gap: 3%;
-   width: 100%;
-}
-.divH2Activite {
-    width: 100%;
-}
-/****************container de deux blocs activité Marseille*********/
 .activiteAMarseille {
     width: 100%;
 }
-.h2Activite{
-    font-size: 1.3rem;
-}
+
+
+/****************container de deux blocs activité Marseille*********/
+.main_activite {
+    display: flex;
+    column-gap: 3%;
+    width: 100%;
+    height:53vh;
+    margin-bottom: 60px;
+ }
 .div_container_deuxBlosDeTroisArticles{
     display: flex;
-    column-gap: 6%;
-    margin-bottom: 3.75rem; 
+    column-gap: 6%;   
 }
-/****reglage image vieux port et calanques********/
-/********verticale vieux et Calanques*************/
+/******************articles verticaux**************/
 .articleVerticale {
-    width: 20%;
-    height: 27rem;
+    box-shadow: 1px 0px 7px -2px rgba(0,0,0,0.65);
     flex-grow: 1;
 }
 .articleVerticale a img{
     object-fit: cover;
     width: 100%;
-    height: 24rem;
+    height: 87%;
 }
 /***********horizontal*********/
-.divHorizontale {
+.divHorizontale,.divHorizontalePomeguesFrioule {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     flex-grow: 1;
-    row-gap: 2.4rem;
+     row-gap: 6%;
 }
+/*les deux articles differents */
+.divHorizontalePomeguesFrioule :nth-child(1){
+     height: 50%;
+}
+.divHorizontalePomeguesFrioule article a img:nth-child(1) {
+     height: 70%;
+}
+/*deux articles identique*/
+.deuxArticlesHorizontales {
+    box-shadow: 1px 0px 7px -2px rgba(0,0,0,0.65);
+    height: 44%;
+}
+
 .deuxArticlesHorizontales a img {
     object-fit: cover;
-    width: 100%;
-   
+    width: 100%;  
+    height: 70%;
 }
 /*text activite a marseille*/
 .textActivite {
     border: transparent 1px solid;
-    margin: auto 1rem;
+    margin: 1rem ;
     font-size: 0.7rem;
     color: black; 
 }
-/*********dimension differentes des images****************/
-.fortDePomegue a img {
-   height: 11.5rem;
- }
- .ilesDuFrioul a img{
-     height: 7rem;
- }
- .notreDame a img{
-     height: 8.8rem;
- }
-.parc a img{
-    height: 9.7rem;
-}
-.articleVerticale,.deuxArticlesHorizontales {
-    box-shadow: 1px 0px 7px -2px rgba(0,0,0,0.65);
-}
+
 /*************************************BREAKPOINTS MAIN*********************/
 @media screen and (max-width:980px){
     /*section container hebergement et populaire*/
@@ -588,8 +565,7 @@ main {
         width: 90%;   
     }
     .div_troisArticles {
-        width: 100%;
-        
+        width: 100%;  
     }
     .containerDesTroisArticles {
         flex-direction: row;
@@ -604,11 +580,18 @@ main {
     .containerDesTroisArticles img{
         width: clamp(2rem,40%,4rem);
     }
-  
     /*activite*/
     .main_activite {
       flex-direction: column;
+      height: 100%;
      }
+     .div_container_deuxBlosDeTroisArticles{
+         height: 50vh;
+         margin-top: 4%;
+    }
+    .reverse {
+        flex-direction: row-reverse;
+    }
 }
 @media screen and (max-width:750px) {
     main {
@@ -629,8 +612,7 @@ main {
         height: 15rem;
      }
     /*POPULAIRE*/
-    .containerDesTroisArticles {
-       
+    .containerDesTroisArticles {    
         flex-direction: column;
         row-gap: 2rem;
          width: 90%;
@@ -650,27 +632,30 @@ main {
         align-items: center;
       
         margin: auto 6%;
-    }
-    /*ACTIVITE*/
-    .main_activite {
-        width: 93%;
-        margin: auto;
-    }
-    .divH2Activite {
-        width: 90%;
-        margin: auto;
-    }
+    }/****************activite*************/
     .div_container_deuxBlosDeTroisArticles{
-        flex-direction: column;  
-       row-gap: 2rem;
+          flex-direction: column;
+          height: 100%;   
+   }
+   /*h2*----*/
+   .divH2Activite {
+       width: 95%;
+       margin: auto;
+   }
+   /**********************verticale******/
+   .articleVerticale, .deuxArticlesHorizontales{
+          height: 200px;   
+          margin: 2%; 
     }
-    .div_container_deuxBlosDeTroisArticles article{
-        width: 100%;
-        height: 17rem; 
-      }
-      .div_container_deuxBlosDeTroisArticles article a img {
-          height: 14rem;
-      }
+    .articleVerticale a img, .deuxArticlesHorizontales a img, .divHorizontalePomeguesFrioule a img {
+        height: 70%;
+    }
+    .divHorizontalePomeguesFrioule :nth-child(1) {
+        height: 200px; 
+    }
+    .divHorizontalePomeguesFrioule a img {
+        height: 70%;
+    }
 }
 @media screen and (max-width:380px) {
     /*heber*/
@@ -686,8 +671,7 @@ main {
     .div_container_deuxBlosDeTroisArticles article a img{
         height: 8rem;
     }
-    .containerText {
-        
+    .containerText {  
         align-items:flex-start;
         width: 50%;
         margin: auto 6%;
@@ -700,11 +684,12 @@ footer {
    align-items: baseline;
    width:100%;
    height:auto;
+   padding: 2rem;
    background-color: #F2F2F2;
 }
 .containerDesClassFooter_infos {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: baseline;
     column-gap: 20%;
     width: 90%;
@@ -748,13 +733,16 @@ footer p:hover {
 }
 
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:750px) {
     .footer_infos{ 
           flex-direction: column;
           align-items: flex-start;
      }
      .footerParagraphe {
         align-items: flex-start;
+    }
+    .footerParagraphe p {
+        margin: 5px;
     }
 }
 
