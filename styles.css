@@ -14,7 +14,6 @@ body {
 a {
     text-decoration: none;
 }
-
 /*color site*/
 .container_sixArticlesEtH2,
 .div_troisArticles,
@@ -133,7 +132,7 @@ header {
     background-color:#aebfda ;
 }
 .rechercher{  
-    padding-left: 5%;
+    padding-left: 7%;
     font-size: 1rem;
     width: auto;
     border:none; 
@@ -141,7 +140,6 @@ header {
     border:solid 1px #DEEBFF;
     }
 input:focus {
-    background-color:rgba(135, 231, 17, 0.425) ;
     outline: none;   
 }
 .rechercher::placeholder {
@@ -188,7 +186,6 @@ input:focus {
     margin: auto;
     margin-left: 0;
     padding:1rem 0;
-   
 }
 .filtreContainerQuatresItems {
     display: flex;
@@ -252,6 +249,7 @@ input:focus {
 }
 /*******************************************BREAKPOINTS HEADER*/
 @media screen and (max-width:750px) {
+
         header {
             width: 100%;
         }
@@ -270,6 +268,7 @@ input:focus {
             width: 90%;
             margin: 0 12px;
         }
+     
         /**************************lien hebergement et Activité*/
         .nav_pHebergementHeber,.nav_pHebergementHeberActivite {
             width: 100%;
@@ -283,20 +282,16 @@ input:focus {
         .nav_pHebergementHeber p,.nav_pHebergementHeberActivite p { 
             margin-top:0px;
             text-align: center;
-        }
-    
-        /**************************lien s'incrire*/
-    
+        }   
+        /**************************lien s'incrire*
         /***s'inscrire*****/
         .nav_pHebergementInscrire {
             margin-left:70%;
             width: 30%;
-        
         }
         .nav_pHebergementInscrire:hover {   
             width:30%;
-        }
-            
+        }         
         /*pour filtres*/
         .filtresContainerFiltres{
             flex-direction: column;
@@ -305,6 +300,11 @@ input:focus {
         .nav_pHebergementInscrire {
             margin-left:70%;
         }
+           /*bouton de recherche*/
+           .rechercher{  
+            padding: 7% 10% 7% 20%;
+    
+            }
         .envoyer {
             display: none;
         }
@@ -314,12 +314,13 @@ input:focus {
             background-color: #0065FC;
             border-radius: 15px;
             border: none;
-            margin-left: 15rem;    
+            margin-left: 240px;    
         }
         .envoyerMobile {
             color: #F2F2F2;
-            margin: 0.8rem 0.6rem;
+            margin: 0.9rem 0.6rem;
         }
+     
  }
       
 /******************************MAIN CONTAINER *********************/
@@ -357,7 +358,6 @@ main {
 .etoilePopulaire p i {
     font-size: 0.7rem;
 }
-
 /*SECTION CONTAINER HEBERGEMENT ET LES PLUS POPULAIRE*/
 .sectionHeberEtPopulaire {
     display: flex;
@@ -367,7 +367,6 @@ main {
 .heberH2,.pHoverSixAticle{
     width:90%;
 }
-
 /*CONTAINER DES SIX ARTICLES "avec h2 et afficher plus" hebergement Marseille**********/
 
 .container_sixArticlesEtH2 {
@@ -393,8 +392,7 @@ main {
    flex-direction: column;
    background-color: white;
    flex-grow: 1;
-    width:25%;
-   
+   width:25%;
    border-radius: 20px 20px;
 }
 .articleHebergements img{
@@ -412,7 +410,6 @@ main {
     padding-left: 1rem;  
     width: 100%;  
 }
-
 .containerTextHebergement p {
     font-size: 0.8rem;
     font-weight: normal; 
@@ -491,8 +488,6 @@ main {
 .activiteAMarseille {
     width: 100%;
 }
-
-
 /****************container de deux blocs activité Marseille*********/
 .main_activite {
     display: flex;
@@ -609,7 +604,10 @@ main {
     }
     .articleHebergements img{
         width: 100%;
-        height: 15rem;
+        height: 10rem;
+     }
+     .containerTextHebergement {
+         align-items: center;
      }
     /*POPULAIRE*/
     .containerDesTroisArticles {    
@@ -630,7 +628,6 @@ main {
      .containerText {
         display: flex;
         align-items: center;
-      
         margin: auto 6%;
     }/****************activite*************/
     .div_container_deuxBlosDeTroisArticles{
@@ -642,10 +639,13 @@ main {
        width: 95%;
        margin: auto;
    }
+   .textActivite h3{
+      text-align: center;
+   }
    /**********************verticale******/
    .articleVerticale, .deuxArticlesHorizontales{
           height: 200px;   
-          margin: 2%; 
+          margin: 3%; 
     }
     .articleVerticale a img, .deuxArticlesHorizontales a img, .divHorizontalePomeguesFrioule a img {
         height: 70%;
@@ -659,12 +659,15 @@ main {
 }
 @media screen and (max-width:380px) {
     /*heber*/
-    .articleHebergements {
-        height: 12rem;     
-    }
+   
     .articleHebergements img {
         height: 7rem;
     }
+    .containerTextHebergement {
+        align-items: flex-start;
+    }
+
+    /*les plus populaires*/
     .div_container_deuxBlosDeTroisArticles article {
         height:11rem; 
     }
@@ -676,6 +679,10 @@ main {
         width: 50%;
         margin: auto 6%;
     }
+    .textActivite h3{
+        text-align: left;
+     }
+
 }
 
 /******************FOOTER*******************/
@@ -731,8 +738,6 @@ footer p:hover {
        
     }
 }
-
-
 @media screen and (max-width:750px) {
     .footer_infos{ 
           flex-direction: column;
