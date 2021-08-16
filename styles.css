@@ -301,10 +301,7 @@ input:focus {
             margin-left:70%;
         }
            /*bouton de recherche*/
-           .rechercher{  
-            padding: 7% 10% 7% 20%;
-    
-            }
+      
         .envoyer {
             display: none;
         }
