@@ -28,6 +28,7 @@ footer {
 h3 {
     font-size: 1rem;
     margin:  0;
+    color: black;
 }
 h4,
 h5 {
@@ -472,8 +473,8 @@ main {
 .containerText {
     flex-direction: column; 
     justify-content: center;
-    flex-grow: 1; 
     margin: auto;
+    width: 70%;
 }
 .containerText p {
     font-size: 0.8rem;
@@ -619,13 +620,13 @@ main {
         width: clamp(10rem,100%,41rem);
      }
      .containerDesTroisArticles a img{
-     
-        width: clamp(5rem,50%,20rem); 
+          width: clamp(5rem,50%,20rem); 
     }
      .containerText {
         display: flex;
         align-items: center;
         margin: auto 6%;
+        width: 50%;
     }/****************activite*************/
     .div_container_deuxBlosDeTroisArticles{
           flex-direction: column;
@@ -671,10 +672,14 @@ main {
     .div_container_deuxBlosDeTroisArticles article a img{
         height: 8rem;
     }
+    .containerText h3 {
+        font-size: 0.9rem;
+  
+    }
     .containerText {  
         align-items:flex-start;
-        width: 50%;
-        margin: auto 6%;
+        margin: auto 4%;
+        width: 40%;
     }
     .textActivite h3{
         text-align: left;
