@@ -166,7 +166,6 @@ input:focus {
 #btnRechercher {
     display:none;             
 }
-
 /***********partie FILTRES*************/
 .filtresContainer_container {
     display: flex;
@@ -214,15 +213,12 @@ input:focus {
 .filtresContainer_div:hover {
     box-shadow: 2px -7px 28px 7px rgba(182, 171, 171, 0.91) inset;
 }
-
 /*Filtres */
-.fas2 {
-    
+.fas2 {  
     padding: 15px 17px;
     background-color:#DEEBFF ;
     border-radius: 50px;
 }
-
 /****container plus de 50 logements****/
 .filtresConainertsIcone {
     display: flex;
@@ -235,13 +231,11 @@ input:focus {
     color: black;
     font-weight: normal;
     font-size: 0.9rem;
-  
 }
 .fas500logements {
     text-align: center;   
     font-size: 0.7rem;
     width: 21px;
-
    /* padding-top: 4px;*/
 }
 .borderFas500logements {
@@ -250,7 +244,6 @@ input:focus {
 }
 /*******************************************BREAKPOINTS HEADER*/
 @media screen and (max-width:750px) {
-
         header {
             width: 100%;
         }
@@ -268,8 +261,7 @@ input:focus {
         .deuxiemePartieHeader {
             width: 90%;
             margin: 0 12px;
-        }
-     
+        }    
         /**************************lien hebergement et Activité*/
         .nav_pHebergementHeber,.nav_pHebergementHeberActivite {
             width: 100%;
@@ -301,8 +293,7 @@ input:focus {
         .nav_pHebergementInscrire {
             margin-left:70%;
         }
-           /*bouton de recherche*/
-      
+           /*bouton de recherche*/     
         .envoyer {
             display: none;
         }
@@ -318,12 +309,9 @@ input:focus {
             color: #F2F2F2;
             margin: 0.9rem 0.6rem;
         }
-     
- }
-      
+ }    
 /******************************MAIN CONTAINER *********************/
 /*****************main container**********/
-
 /*ci-dessous border radius des elements*/
 .articlesLesPlusPopulaires a,
 .container_sixArticlesEtH2,
@@ -366,7 +354,6 @@ main {
     width:90%;
 }
 /*CONTAINER DES SIX ARTICLES "avec h2 et afficher plus" hebergement Marseille**********/
-
 .container_sixArticlesEtH2 {
     display: flex;   
     flex-direction:column;
@@ -404,7 +391,6 @@ main {
  .containerTextHebergement {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
     padding-left: 1rem;  
     width: 100%;  
 }
@@ -460,7 +446,6 @@ main {
     flex-grow: 1;
     height: 9.2rem;
 }
-
 .articlesLesPlusPopulaires a img{
     object-fit: cover;  
     width: clamp(5rem,40%,10rem);
@@ -468,13 +453,13 @@ main {
     border-radius: 20px 0 0 20px;
     border: 5px solid white;
 }
-
 /************container text and star*********/
 .containerText {
     flex-direction: column; 
     justify-content: center;
     margin: auto;
-    width: 70%;
+    width: 55%;
+   
 }
 .containerText p {
     font-size: 0.8rem;
@@ -528,7 +513,6 @@ main {
     box-shadow: 1px 0px 7px -2px rgba(0,0,0,0.65);
     height: 44%;
 }
-
 .deuxArticlesHorizontales a img {
     object-fit: cover;
     width: 100%;  
@@ -541,7 +525,6 @@ main {
     font-size: 0.7rem;
     color: black; 
 }
-
 /*************************************BREAKPOINTS MAIN*********************/
 @media screen and (max-width:980px){
     /*section container hebergement et populaire*/
@@ -592,13 +575,13 @@ main {
     }
     /*HEBERGEMENT A MARSEILLE*/
     .articleHebergements {
-         box-shadow: 1px 0px 7px -2px rgba(0,0,0,0.65);
+        box-shadow: 1px 0px 7px -2px rgba(0,0,0,0.65);
     }
     .container_sixArticlesEtH2{
         background-color: white;
     }
     .articleHebergements {
-       width:100%;
+    width:100%;
     }
     .articleHebergements img{
         width: 100%;
@@ -631,15 +614,15 @@ main {
     .div_container_deuxBlosDeTroisArticles{
           flex-direction: column;
           height: 100%;   
-   }
-   /*h2*----*/
-   .divH2Activite {
-       width: 95%;
-       margin: auto;
-   }
-   .textActivite h3{
-      text-align: center;
-   }
+    }
+    /*h2*----*/
+    .divH2Activite {
+        width: 95%;
+        margin: auto;
+    }
+    .textActivite h3{
+        text-align: center;
+    }
    /**********************verticale******/
    .articleVerticale, .deuxArticlesHorizontales{
           height: 200px;   
@@ -657,14 +640,12 @@ main {
 }
 @media screen and (max-width:380px) {
     /*heber*/
-   
     .articleHebergements img {
         height: 7rem;
     }
     .containerTextHebergement {
         align-items: flex-start;
     }
-
     /*les plus populaires*/
     .div_container_deuxBlosDeTroisArticles article {
         height:11rem; 
@@ -674,7 +655,6 @@ main {
     }
     .containerText h3 {
         font-size: 0.9rem;
-  
     }
     .containerText {  
         align-items:flex-start;
@@ -684,7 +664,6 @@ main {
     .textActivite h3{
         text-align: left;
      }
-
 }
 
 /******************FOOTER*******************/
@@ -704,7 +683,6 @@ footer {
     width: 90%;
     max-width: 1340px;
     margin: auto;
-
 }
 .footer_infos {
     padding: 2% 0 2% 0;
@@ -712,7 +690,6 @@ footer {
 h5 {
     font-size: 1rem ;
 }
-
 footer p {
     font-weight: normal;
    
@@ -736,8 +713,7 @@ footer p:hover {
     .footerParagraphe {
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
-       
+        align-items: flex-end;      
     }
 }
 @media screen and (max-width:750px) {
@@ -752,7 +728,8 @@ footer p:hover {
         margin: 5px;
     }
 }
-
-
-
- 
+@media screen and (max-width:380px) {
+    .footer_infos {
+        width: 100%;
+    }
+}
